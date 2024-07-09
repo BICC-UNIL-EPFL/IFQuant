@@ -2,9 +2,19 @@
 *~
 *#
 .#*
+*.sif
 
 #for mac
 .DS_Store
 
 #for KDE
 .directory
+
+#hide node_modules
+ifquant-vuejs/node_modules
+
+#log
+log
+
+#htaccess
+ifquant-vuejs/dist/.htaccess

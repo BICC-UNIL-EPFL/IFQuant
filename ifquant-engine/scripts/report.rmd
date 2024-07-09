@@ -1,0 +1,799 @@
+---
+title: |
+  | IFQuant report
+  |
+  | \normalsize `r sample.info[sample.info=="sample_id",2]`
+author: ""
+date: "`r format(Sys.time(), '%d %B %Y')`"
+geometry: "left=1.5cm,right=1.5cm,top=2cm,bottom=2cm"
+fontsize: 10pt
+output:
+  pdf_document:
+    keep_tex: false
+    fig_crop: no
+papersize: a4
+classoption:
+- table
+header-includes:
+  - \usepackage{graphicx}
+  - \usepackage{xcolor}
+  - \usepackage{placeins}
+  - \usepackage{booktabs}
+  - \usepackage{titling}
+  - \usepackage{fancyhdr}
+  - \pagestyle{fancy}
+  - \pagenumbering{gobble}
+  - \setlength{\droptitle}{-1cm}
+  - \pretitle{\begin{center}\vspace{5cm}\Huge\sffamily}
+  - \posttitle{\end{center}\vspace{1cm}}
+  - \preauthor{\begin{center}\sffamily}
+  - \postauthor{\end{center}}
+  - \predate{\begin{center}\sffamily}
+  - \postdate{\end{center}}
+  - \renewcommand{\headrulewidth}{0.4pt}
+  - \renewcommand{\footrulewidth}{0.4pt}
+  - \let\HeadRule\headrule
+  - \renewcommand\headrule{\color{gray}\HeadRule}
+  - \let\FootRule\footrule
+  - \renewcommand\footrule{\color{gray}\FootRule}
+  - \fancyhead[L]{\sffamily\footnotesize\textcolor{gray}{`r gsub("([_#$%&])","\\\\\\1",sample.info[sample.info=="sample_id",2])`}}
+  - \fancyfoot[L]{\sffamily\footnotesize\textcolor{gray}{`r format(Sys.time(), '%d %b. %Y')`}}
+  - \fancyfoot[C]{}
+  - \fancyfoot[R]{\sffamily\footnotesize\textcolor{gray}{Page \thepage}}
+  - \definecolor{colorsection}{RGB}{22,47,118}
+  # style for section 
+  - \let\Oldsection\section
+  - \renewcommand\section[1]{\Oldsection*{\normalfont\sffamily\huge\textcolor{colorsection}{#1\vspace{3mm}}}\addcontentsline{toc}{section}{#1}} 
+  # style for subsection -->
+  - \let\Oldsubsection\subsection
+  - \renewcommand\subsection[1]{\Oldsubsection{\normalfont\sffamily\LARGE\textcolor{colorsection}{#1}}}
+  # style for subsubsection -->
+  - \let\Oldsubsubsection\subsubsection
+  - \renewcommand\subsubsection[1]{\Oldsubsubsection{\normalfont\sffamily\Large\textcolor{colorsection}{#1}}}
+  # style for paragraph -->
+  - \let\Oldparagraph\paragraph
+  - \renewcommand\paragraph[1]{\Oldparagraph{\sffamily\textcolor{colorsection}{#1}}}
+---
+
+
+\sffamily
+
+
+
+
+```{r,echo=FALSE}
+options(knitr.table.format = "latex")
+knitr::opts_chunk$set(fig.width=10,fig.height=7,fig.align='left',warning=FALSE) 
+```
+
+
+```{r initialization, include=FALSE}
+figdir="figures_tmp/"
+##map rgb to colour name
+rgb2col=function(r,g,b,maxColorValue = 255){
+ color.names=grep("[0-9]",colours(distinct=TRUE),invert=TRUE,value=TRUE)
+ color.rgb=t(col2rgb(color.names))/255
+ color.names[which.min(sqrt((color.rgb[,"red"]-r/maxColorValue)**2+(color.rgb[,"green"]-g/maxColorValue)**2+(color.rgb[,"blue"]-b/maxColorValue)**2))]
+}
+```
+
+
+
+
+\newpage
+\pagenumbering{arabic}
+# Image
+
+```{r image_specifications,echo=FALSE,results='asis'}
+tmptable=sample.info
+tmptable[,1]=gsub(":*$",":",tmptable[,1])
+colnames(tmptable)=NULL
+tmptable[,1]=sapply(gsub(" id([ :])"," ID\\1", gsub("_"," ",tmptable[,1])),function(x){substr(x, 1, 1) <- toupper(substr(x, 1, 1));x})
+knitr::kable(tmptable,row.names=FALSE, vline = "",toprule="", midrule="",bottomrule="",linesep="")
+```
+
+\vfill
+
+Panel specifications: 
+\footnotesize
+```{r panel_specifications,echo=FALSE,results='asis'}
+tmptable=data.frame(Channel=metadata$channel,Filter=metadata$filter,Marker=metadata$name,"Display color"=sapply(strsplit(metadata$color,","),function(x){rgb2col(as.numeric(x[1]),as.numeric(x[2]),as.numeric(x[3]))}),check.names=FALSE,stringsAsFactors=FALSE)
+##colorize column Display color
+tmptable[,"Display color"]=sapply(tmptable[,"Display color"],function(color){rgb=col2rgb(color);bg="black";if(color=="black")bg="white";paste0("\\cellcolor{",bg,"}\\textcolor[RGB]{",rgb[1,],",",rgb[2,],",",rgb[3,],"}{\\textbf{",color,"}}")})
+knitr::kable(tmptable,format="latex",escape=FALSE,row.names=FALSE,booktabs = TRUE,linesep="")
+```
+\normalsize
+\vfill
+
+Composite image (white: selected tiles, red: excluded regions, green: regions of interest`r if(!(clip.region["x.min"]<=0&&clip.region["y.min"]<=0&&clip.region["x.max"]>=image.info$image.width.pixel&&clip.region["y.max"]>=image.info$image.height.pixel)){", grey area: ignored region"}`):
+```{r figure_composite, echo = FALSE, message=FALSE, fig.align='left', out.width='100%',out.height='60%'}
+knitr::include_graphics(paste0(figdir,"/image_composite.pdf"))
+```
+
+<!-- Regions of interest properties -->
+```{r ROIs_table,echo = FALSE,results='asis',out.width='100%'}
+if(length(regions.of.interest.labels)>0)
+{
+ cat("\\vspace{3mm}\n")
+ cat("Regions of interest:\n")
+ cat("\n")
+ tmptable=get_formated_ROI_summary_table()
+ print(knitr::kable(tmptable,row.names=FALSE,booktabs = TRUE,linesep="",escape=FALSE))
+ cat("\n")
+}
+```
+
+\newpage
+# Selected tiles
+
+Specific markers (column) with `r dapi.channel.name``r ifelse(tumor_marker_present,paste0(" and ",ck.channel.name),"")` for selected tiles (row):
+```{r figure_selected_tiles, echo = FALSE,results='asis'}
+nr=nrow(selected.tiles)
+nc=length(rownames(metadata)[!metadata$channel%in%c(channel.dapi,channel.ck,channel.autofluorescence)])
+im.w=(0.8/nc)
+im.h=(0.9/nr)
+tmptable=expand.grid(Region=1:nrow(selected.tiles),f=rownames(metadata)[!metadata$channel%in%c(channel.dapi,channel.ck,channel.autofluorescence)])
+tmptable$filename=paste0("\\includegraphics[height=",im.h,"\\textheight,width=",im.w,"\\textwidth]{{",figdir,"/selected_tile_",tmptable$Region,"_",tmptable$f,".pdf}}")
+tmptable=reshape2::dcast(tmptable,Region~f,value.var="filename")
+##use marker name for colnames
+colnames(tmptable)[grep("channel_",colnames(tmptable))]=metadata[colnames(tmptable)[grep("channel_",colnames(tmptable))],"name"]
+colnames(tmptable)[1]=""
+knitr::kable(tmptable,format="latex",escape=FALSE,row.names=FALSE, vline = "",toprule="",midrule="",bottomrule="",linesep="",valign = "top",align="c") #booktabs = TRUE
+```
+
+
+
+\newpage
+# QC
+
+```{r figure_QC, echo = FALSE, message=FALSE, fig.align='left', out.width='100%',out.height='60%'}
+knitr::include_graphics(paste0(figdir,"/image_QC.pdf"))
+```
+
+\vspace{1cm}
+```{r QC_percent,echo=FALSE,results='asis'}
+nb.nonempty.bins=QC.bin.count["ok.sharpness"]+QC.bin.count["warning.sharpness"]+QC.bin.count["bad.sharpness"]
+tmptable=data.frame()
+tmptable=rbind(tmptable,data.frame(c1="Green", c2=paste0(paste(nucleus.channel.names,collapse="+")," focus OK"),c3=paste0("(",signif(100*QC.bin.count["ok.sharpness"]/nb.nonempty.bins,2),"%)")))
+tmptable=rbind(tmptable,data.frame(c1="Yellow",c2=paste0(paste(nucleus.channel.names,collapse="+")," focus warning"),c3=paste0("(",signif(100*QC.bin.count["warning.sharpness"]/nb.nonempty.bins,2),"%)")))
+tmptable=rbind(tmptable,data.frame(c1="Red",   c2=paste0(paste(nucleus.channel.names,collapse="+")," out of focus"),c3=paste0("(",signif(100*QC.bin.count["bad.sharpness"]/nb.nonempty.bins,2),"%)")))
+tmptable=rbind(tmptable,data.frame(c1="Grey",  c2=paste0("Low ",paste(nucleus.channel.names,collapse="+")),c3=""))
+tmptable=rbind(tmptable,data.frame(c1="White", c2="No signal",c3=""))
+tmptable=rbind(tmptable,data.frame(c1="Blue",  c2="Excluded regions",c3=""))
+colnames(tmptable)=NULL
+knitr::kable(tmptable,row.names=FALSE, vline = "",toprule="", midrule="",bottomrule="",	 linesep="")
+```
+
+
+
+
+
+\newpage
+# Cell segmentation
+
+`r if(length(nucleus.channel.names)>1){paste0("Markers used for nuclei segmentation: ",paste(nucleus.channel.names,collapse=", "),".")}`
+
+Cell density (cells/mm$^2$):
+```{r figure_cell_density, echo = FALSE, message=FALSE, fig.align='left', out.width='100%',out.height='60%'}
+knitr::include_graphics(paste0(figdir,"/image_cell_density.pdf"))
+```
+
+
+\newpage
+Nuclei centers (green) detected in selected tiles with `r dapi.channel.name``r ifelse(tumor_marker_present,paste0(" and ",ck.channel.name),"")`:
+```{r figure_cell_segmentation, echo = FALSE,results='asis'}
+n=nrow(selected.tiles)
+nc=round(sqrt(n*210/297))
+nr=ceiling(n/nc)
+im.w=(0.9/nc)
+im.h=(0.9/nr)
+tmptable=data.frame(i=1:n)
+tmptable$filename=paste0("\\includegraphics[height=",im.h,"\\textheight,width=",im.w,"\\textwidth]{{",figdir,"/selected_tile_",tmptable$i,"_cell_segmentation.pdf}}")
+tmptable$x=(tmptable$i-1)%%nc
+tmptable$y=(tmptable$i-1)%/%nc
+tmptable=reshape2::dcast(tmptable,y~x,value.var="filename",fill="")[,-1]
+##remove colnames
+colnames(tmptable)=NULL
+knitr::kable(tmptable,format="latex",escape=FALSE,row.names=FALSE, vline = "",toprule="",midrule="",bottomrule="",linesep="",valign = "top",align="c")
+```
+
+
+\newpage
+# Tissue segmentation
+
+```{r tissue_segmentation1,echo = FALSE,results='asis',out.width='100%'}
+if(tumor_marker_present==FALSE)
+{
+  cat("\\textcolor{red}{In the absence of a tumor marker, tissue segmentation could not be done!}")
+}
+if(tumor_marker_present)
+{
+  cat("\n")
+  cat("Automatic ",ck.channel.name," thresholding:\n",sep="")
+  cat("\\begin{minipage}[t]{0.5\\textwidth}\n")
+  cat("\\vspace{0pt}\n")
+
+  color="black"
+  if(automatic.ck.thresholding.status=="Success")color="green"
+  if(automatic.ck.thresholding.status=="Warning")color="orange"
+  if(automatic.ck.thresholding.status=="Failed")color="red"
+  if(automatic.ck.thresholding.status=="Not done")color="gray"
+  if(automatic.ck.thresholding.status=="Manually adjusted")color="gray"
+  tmptable=data.frame()
+  tmptable=rbind(tmptable,data.frame(c1="Status:",c2=paste0("\\textcolor{",color,"}{",automatic.ck.thresholding.status,"}")))
+  tmptable=rbind(tmptable,data.frame(c1=paste0(ck.channel.name," threshold:"),c2=as.character(signif(metadata.channel.thresholding[input.ck,"threshold"],5))))
+  colnames(tmptable)=NULL
+  print(knitr::kable(tmptable,row.names=FALSE, vline = "",toprule="", midrule="",bottomrule="",linesep="",escape=FALSE))
+
+  cat("\\end{minipage}\n")
+  cat("\\begin{minipage}[t]{0.4\\textwidth}\n")
+  cat("\\vspace{-1cm}\n")
+  cat("\\includegraphics[width=1\\textwidth]{{",figdir,"/automatic_ck_thresholding.pdf}}\n",sep="")
+  cat("\\end{minipage}\n")
+  cat("\\vspace{5mm}\n")
+  tmptable=get_formated_tissue_type_summary_table()
+  print(knitr::kable(tmptable,row.names=FALSE,booktabs = TRUE,linesep="",escape=FALSE,align="r"))
+  cat("Density=(Number of cells in tissue)/(total tissue area)\n")
+  cat("\\vspace{5mm}\n")
+
+  ##we cannot set size based on width because one figure has a legend that we want to ignore.
+  ##we want to fix the height such that width (ignoring legend) ~ 0.19 \textwidth and height is smaller than 0.25 \textheight
+  max.w=0.19 #percent of page width
+  max.h=0.25 #percent of page height
+  im.h=min(max.h,max.w*clipped.image.height.pixel/clipped.image.width.pixel)
+
+  cat("\\begin{minipage}[t]{0.66\\textwidth}\n")
+  cat("Tissue type (red: tumor, green: stroma",ifelse(flag_other_tissue,", blue: other",""),"):\n",sep="")
+  cat("\\begin{flushleft}\\includegraphics[width=\\textwidth,height=0.6\\textheight]{{",figdir,"/image_tissue_type.pdf}}\\end{flushleft}\n",sep="")
+  cat("\\end{minipage}\n")
+
+  cat("\\begin{minipage}[t]{0.33\\textwidth}\n")
+  cat(ck.channel.name," fluorescence (with ",dapi.channel.name,"):\n",sep="")
+  cat("\\begin{flushleft}\\includegraphics[width=\\textwidth,height=",im.h,"\\textheight]{{",figdir,"/image_channel_intensity_",input.ck,".pdf}}\\end{flushleft}\n",sep="")
+  cat("\\vspace{5mm}\n")
+  cat(ck.channel.name,"-positive cells density (cells/mm$^2$):\n",sep="")
+  cat("\\begin{flushleft}\\includegraphics[width=\\textwidth,height=",im.h,"\\textheight]{{",figdir,"/image_channel_cell_density_",input.ck,".pdf}}\\end{flushleft}\n",sep="")
+  cat("\\end{minipage}\n")
+}
+```
+
+
+```{r tissue_segmentation2,echo = FALSE,results='asis',out.width='100%'}
+if(tumor_marker_present)
+{
+  cat("\\newpage\n")
+  cat("Tissue segmentation in selected tiles (two images per region):\n\n")
+  cat("* ",ck.channel.name," positive (red circles) and ",ck.channel.name," negative cells (white dots) with ",dapi.channel.name," and ",ck.channel.name,".\n",sep="")
+  cat("* Tissue type mask (red: tumor, green: stroma",ifelse(flag_other_tissue,", blue: other",""),") with ",dapi.channel.name," and ",ck.channel.name,".\n",sep="")
+  n=nrow(selected.tiles)
+  nc=round(sqrt(n*210/297))
+  nr=ceiling(n/nc)
+  im.w=(0.9/nc)/2 ##two image by cell
+  im.h=(0.9/nr)
+  tmptable=data.frame(i=1:n)
+  tmptable$filename=paste0("\\includegraphics[height=",im.h,"\\textheight,width=",im.w,"\\textwidth]{{",figdir,"/selected_tile_",tmptable$i,"_tissue_segmentation_ck.pdf}}\\includegraphics[height=",im.h,"\\textheight,width=",im.w,"\\textwidth]{{",figdir,"/selected_tile_",tmptable$i,"_tissue_segmentation.pdf}}")
+  tmptable$x=(tmptable$i-1)%%nc
+  tmptable$y=(tmptable$i-1)%/%nc
+  tmptable=reshape2::dcast(tmptable,y~x,value.var="filename",fill="")[,-1]
+  ##remove colnames
+  colnames(tmptable)=NULL
+  print(knitr::kable(tmptable,format="latex",escape=FALSE,row.names=FALSE, vline = "",toprule="",midrule="",bottomrule="",linesep="",valign = "top",align="c"))
+}
+```
+
+
+
+
+
+\newpage
+# Markers thresholding
+
+```{r table_channel_thresholding,echo=FALSE,results='asis'}
+tmptable=metadata.channel.thresholding[!metadata.channel.thresholding$channel%in%c(channel.dapi,channel.autofluorescence),]
+tmptable$region=gsub("^(circular\\.[^.]*|[^.]*)\\.(nucleus|extended.nucleus|around.nucleus)$","\\2",tmptable$score.type)
+tmptable$statistics=gsub("^(circular\\.[^.]*|[^.]*)\\.(nucleus|extended.nucleus|around.nucleus)$","\\1",tmptable$score.type)
+##reformat region
+tmptable$region=gsub("^nucleus$","nucleus",tmptable$region)
+tmptable$region=gsub("^extended.nucleus$","extended nucleus",tmptable$region)
+tmptable$region=gsub("^around.nucleus$","around nucleus (doughnut)",tmptable$region)
+##reformat statistics
+tmptable$statistics=gsub("circular\\.","encircling ",tmptable$statistics)
+tmptable$statistics=gsub("q050","median",tmptable$statistics)
+tmptable$statistics=gsub("q0*([1-9][0-9]*)","\\1 percentile",tmptable$statistics)
+tmptable$statistics=gsub("(^1| 1) ","\\1-st ",tmptable$statistics)
+tmptable$statistics=gsub("(^2| 2) ","\\1-nd ",tmptable$statistics)
+tmptable$statistics=gsub("([0-9]| [0-9]) ","\\1-th ",tmptable$statistics)
+tmptable=tmptable[,c("name","statistics","region","threshold")]
+colnames(tmptable)=c("Marker","Summary statistics","Region","Threshold")
+knitr::kable(tmptable,row.names=FALSE,booktabs = TRUE,linesep="")
+```
+
+Note: in this section, a cell is considered as \<marker\>-positive if the score of this \<marker\> (summary statistics over the region) is above the threshold, independently of the other markers.
+\vspace{1cm}
+
+### Total
+\footnotesize
+```{r table_markerpositive_summary_total,echo=FALSE,results='asis'}
+tmptable=get_formated_single_marker_summary_table(tissue.type="total")
+knitr::kable(tmptable,row.names=FALSE,booktabs = TRUE,linesep="",escape=FALSE,align="r")
+```
+\normalsize
+Density=(number of marker-positive cells)/(total area)
+\vspace{5mm}
+
+```{r table_markerpositive_summary_stroma,echo=FALSE,results='asis'}
+if(tumor_marker_present)
+{
+  cat("### Stroma\n")
+  cat("\\footnotesize\n")
+  cat("\n")
+  tmptable=get_formated_single_marker_summary_table(tissue.type="stroma")
+  print(knitr::kable(tmptable,row.names=FALSE,booktabs = TRUE,linesep="",escape=FALSE,align="r"))
+  cat("\n")
+  cat("\\normalsize\n")
+  cat("Density=(number of marker-positive cells)/(total stroma area)\n")
+  cat("\\vspace{5mm}\n")
+}
+```
+
+```{r table_markerpositive_summary_tumor,echo=FALSE,results='asis'}
+if(tumor_marker_present)
+{
+  cat("### Tumor\n")
+  cat("\\footnotesize\n")
+  cat("\n")
+  tmptable=get_formated_single_marker_summary_table(tissue.type="tumor")
+  print(knitr::kable(tmptable,row.names=FALSE,booktabs = TRUE,linesep="",escape=FALSE,align="r"))
+  cat("\n")
+  cat("\\normalsize\n")
+  cat("Density=(number of marker-positive cells)/(total tumor area)\n")
+  cat("\\vspace{5mm}\n")
+}
+```
+
+
+```{r table_markerpositive_summary_other,echo=FALSE,results='asis'}
+if(tumor_marker_present&&flag_other_tissue)
+{
+  cat("### Other\n")
+  cat("\\footnotesize\n")
+  cat("\n")
+  tmptable=get_formated_single_marker_summary_table(tissue.type="other")
+  print(knitr::kable(tmptable,row.names=FALSE,booktabs = TRUE,linesep="",escape=FALSE,align="r"))
+  cat("\n")
+  cat("\\normalsize\n")
+  cat("Density=(number of marker-positive cells)/(total other area)\n")
+}
+```
+
+
+
+\vspace{1cm}
+```{r figure_analysis_image_per_channel, echo = FALSE,results='asis'}
+##we want nr row per page. But we cannot set the size based on width because of the legend for the cell density.
+##instead we set the height such that the width=0.9/nc * \textwidth
+nr=2
+nc=2
+im.h=(0.9/nc)*clipped.image.height.pixel/clipped.image.width.pixel
+im.h2=paste0(im.h,"\\textwidth")
+textwidth.approx=210-2*15 #15mm of margin on each side
+textheight.approx=297-2*20 #20mm of margin on each side
+if(im.h*textwidth.approx>(0.8/nr)*textheight.approx)
+{
+im.h2=paste0((0.8/nr),"\\textheight")
+}
+for(f in rownames(metadata)[!metadata$channel%in%c(channel.dapi,channel.autofluorescence)])
+{
+ tmptable=data.frame(
+    paste0("\\includegraphics[height=",im.h2,"]{{",figdir,"/image_channel_intensity_",f,".pdf}}"),     paste0("\\includegraphics[height=",im.h2,"]{{",figdir,"/image_channel_cell_density_",f,".pdf}}"))
+ colnames(tmptable)=c(paste0(metadata[f,"name"]," fluorescence (with ",dapi.channel.name,")"),paste0(metadata[f,"name"],"-positive cells density (cells/mm$^2$)"))
+ print(knitr::kable(tmptable,format="latex",escape=FALSE,row.names=FALSE, vline = "",toprule="",midrule="",bottomrule="",linesep="",valign = "top",align="c"))
+ cat("\n")
+}
+```
+
+
+\newpage
+For each marker (column), marker-positve cells (red circles) and negative cells (white dots) for selected tiles (rows):
+```{r  figure_analysis_selected_tiles_per_channel_positive_cells, echo = FALSE,results='asis'}
+nr=nrow(selected.tiles)
+nc=length(rownames(metadata)[!metadata$channel%in%c(channel.dapi,channel.autofluorescence)])
+im.w=(0.8/nc)
+im.h=(0.9/nr)
+tmptable=expand.grid(Region=1:nrow(selected.tiles),f=rownames(metadata)[!metadata$channel%in%c(channel.dapi,channel.autofluorescence)])
+tmptable$filename=paste0("\\includegraphics[height=",im.h,"\\textheight,width=",im.w,"\\textwidth]{{",figdir,"/selected_tile_",tmptable$Region,"_",tmptable$f,"_positive_cells.pdf}}")
+tmptable=reshape2::dcast(tmptable,Region~f,value.var="filename")
+##use marker name for colnames
+colnames(tmptable)[grep("channel_",colnames(tmptable))]=metadata[colnames(tmptable)[grep("channel_",colnames(tmptable))],"name"]
+colnames(tmptable)[1]=""
+knitr::kable(tmptable,format="latex",escape=FALSE,row.names=FALSE, vline = "",toprule="",midrule="",bottomrule="",linesep="",valign = "top",align="c")
+```
+
+
+
+\newpage
+# Phenotypes
+
+Phenotypes specification:
+```{r table_phenotypes_specifications,echo=FALSE,results='asis'}
+tmptable=unique(data.table(phenotypes))
+for(col in rownames(metadata)[!metadata$channel%in%c(channel.dapi,channel.autofluorescence)])
+{
+tmptable=setnames(tmptable[,.(new_col=gsub("^01$","*",paste0(sort(unlist(.SD)),collapse=""))),by=c("label",cols[cols!=col]),.SDcols=col],"new_col",col)
+}
+tmptable=tmptable[,lapply(.SD,function(x){gsub("^1$","+",gsub("^0$","--",x))}),by=label]
+##change colnames to marker names
+colnames(tmptable)=ifelse(colnames(tmptable)%in%rownames(metadata),metadata[colnames(tmptable),"name"],colnames(tmptable))
+setnames(tmptable,"label","Phenotype")
+knitr::kable(tmptable,row.names=FALSE,booktabs = TRUE,linesep="")
+```
+Symbols: negative (--), positive(+), negative or positive (*)
+
+`r if(!is.null(overlapping_phenotypes))paste0("Warning: phenotypes are not disjoint (i.e. cells can be be assigned to multiple phenotypes). For example, ",names(overlapping_phenotypes)[[1]]," cells will be assigned to the following phenotypes: ",paste(overlapping_phenotypes[[1]],collapse=", "),".")`
+
+
+\vspace{2cm}
+```{r figure_phenotype_summary_total,echo=FALSE,message=FALSE,out.width='100%'}
+knitr::include_graphics(paste0(figdir,"/phenotypes_cell_count.pdf"))
+```
+
+\newpage
+### Total
+\footnotesize
+```{r table_phenotype_summary_total,echo=FALSE,results='asis'}
+tmptable=get_formated_phenotypes_summary_table(tissue.type="total",phenotypes.type="standard")
+knitr::kable(tmptable,row.names=FALSE,booktabs = TRUE,linesep="",escape=FALSE,align="r")
+```
+\normalsize
+Density=(number of cells with phenotype)/(total area)
+\vspace{1cm}
+
+
+```{r table_phenotype_summary_stroma,echo=FALSE,results='asis'}
+if(tumor_marker_present)
+{
+  cat("### Stroma\n")
+  cat("\\footnotesize\n")
+  cat("\n")
+  tmptable=get_formated_phenotypes_summary_table(tissue.type="stroma",phenotypes.type="standard")
+  print(knitr::kable(tmptable,row.names=FALSE,booktabs = TRUE,linesep="",escape=FALSE,align="r"))
+  cat("\n")
+  cat("\\normalsize\n")
+  cat("Density=(number of cells with phenotype)/(total stroma area)\n")
+  cat("\\vspace{1cm}\n")
+}
+```
+
+```{r table_phenotype_summary_tumor,echo=FALSE,results='asis'}
+if(tumor_marker_present)
+{
+  cat("### Tumor\n")
+  cat("\\footnotesize\n")
+  cat("\n")
+  tmptable=get_formated_phenotypes_summary_table(tissue.type="tumor",phenotypes.type="standard")
+  print(knitr::kable(tmptable,row.names=FALSE,booktabs = TRUE,linesep="",escape=FALSE,align="r"))
+  cat("\n")
+  cat("\\normalsize\n")
+  cat("Density=(number of cells with phenotype)/(total tumor area)\n")
+  cat("\\vspace{1cm}\n")
+}  
+```
+
+
+```{r table_phenotype_summary_other,echo=FALSE,results='asis'}
+if(tumor_marker_present&&flag_other_tissue)
+{
+  cat("### Other\n")
+  cat("\\footnotesize\n")
+  cat("\n")
+  tmptable=get_formated_phenotypes_summary_table(tissue.type="other",phenotypes.type="standard")
+  print(knitr::kable(tmptable,row.names=FALSE,booktabs = TRUE,linesep="",escape=FALSE,align="r"))
+  cat("\n")
+  cat("\\normalsize\n")
+  cat("Density=(number of cells with phenotype)/(total other area)\n")
+  cat("\\vspace{1cm}\n")
+}
+```
+
+### Total (other phenotypes)
+\footnotesize
+```{r table_phenotype_summary_total_other,echo=FALSE,results='asis'}
+tmptable=get_formated_phenotypes_summary_table(tissue.type="total",phenotypes.type="other")
+knitr::kable(tmptable,row.names=FALSE,booktabs = TRUE,linesep="",escape=FALSE,align="r")
+```
+\normalsize
+Density=(number of cells with phenotype)/(total area)
+\vspace{1cm}
+
+
+```{r table_phenotype_summary_stroma_other,echo=FALSE,results='asis'}
+if(tumor_marker_present)
+{
+  cat("### Stroma (other phenotypes)\n")
+  cat("\\footnotesize\n")
+  cat("\n")
+  tmptable=get_formated_phenotypes_summary_table(tissue.type="stroma",phenotypes.type="other")
+  print(knitr::kable(tmptable,row.names=FALSE,booktabs = TRUE,linesep="",escape=FALSE,align="r"))
+  cat("\n")
+  cat("\\normalsize\n")
+  cat("Density=(number of cells with phenotype)/(total stroma area)\n")
+  cat("\\vspace{1cm}\n")
+}
+```
+
+```{r table_phenotype_summary_tumor_other,echo=FALSE,results='asis'}
+if(tumor_marker_present)
+{
+  cat("### Tumor (other phenotypes)\n")
+  cat("\\footnotesize\n")
+  cat("\n")
+  tmptable=get_formated_phenotypes_summary_table(tissue.type="tumor",phenotypes.type="other")
+  print(knitr::kable(tmptable,row.names=FALSE,booktabs = TRUE,linesep="",escape=FALSE,align="r"))
+  cat("\n")
+  cat("\\normalsize\n")
+  cat("Density=(number of cells with phenotype)/(total tumor area)\n")
+  cat("\\vspace{1cm}\n")
+}  
+```
+
+```{r table_phenotype_summary_other_other,echo=FALSE,results='asis'}
+if(tumor_marker_present&&flag_other_tissue)
+{
+  cat("### Other (other phenotypes)\n")
+  cat("\\footnotesize\n")
+  cat("\n")
+  tmptable=get_formated_phenotypes_summary_table(tissue.type="other",phenotypes.type="other")
+  print(knitr::kable(tmptable,row.names=FALSE,booktabs = TRUE,linesep="",escape=FALSE,align="r"))
+  cat("\n")
+  cat("\\normalsize\n")
+  cat("Density=(number of cells with phenotype)/(total other area)\n")
+  cat("\\vspace{1cm}\n")
+}
+```
+
+\newpage
+Cell density (cells/mm$^2$) per phenotype:
+
+```{r figure_phenotypes_cell_density, echo = FALSE,results='asis'}
+##we want nr row per page. But we cannot set the size based on width because of the legend for the cell density.
+##instead we set the height such that the widht=0.9/nc * \textwidth
+nr=2
+nc=2
+im.h=(0.8/nc)*clipped.image.height.pixel/clipped.image.width.pixel
+im.h2=paste0(im.h,"\\textwidth")
+textwidth.approx=210-2*15 #15mm of margin on each side
+textheight.approx=297-2*20 #20mm of margin on each side
+if(im.h*textwidth.approx>(0.8/nr)*textheight.approx)
+{
+im.h2=paste0((0.8/nr),"\\textheight")
+}
+for(j in 1:ceiling(length(phenotypes.list)/2))
+{
+ i=2*(j-1)+1
+ tmptable=data.frame(paste0("\\includegraphics[height=",im.h2,"]{{",figdir,"/image_cell_density_phenotype_",i,".pdf}}"))
+ i=2*(j-1)+2
+ tmptable=cbind(tmptable,data.frame(
+  ifelse(i<=length(phenotypes.list),
+   paste0("\\includegraphics[height=",im.h2,"]{{",figdir,"/image_cell_density_phenotype_",i,".pdf}}"),
+   "")))
+ i=2*(j-1)+1
+ colnames(tmptable)[1]=paste0(str_sanitize_latex(phenotypes.list[i])," (cells/mm$^2$)")
+ i=2*(j-1)+2
+ colnames(tmptable)[2]=""
+ if(i<=length(phenotypes.list))
+ colnames(tmptable)[2]=paste0(str_sanitize_latex(phenotypes.list[i])," (cells/mm$^2$)")
+ print(knitr::kable(tmptable,format="latex",escape=FALSE,row.names=FALSE, vline = "",toprule="",midrule="",bottomrule="",linesep="",valign = "top",align="c"))
+ cat("\n")
+}
+
+```
+
+
+
+
+<!-- ROIs -->
+```{r ROIs,echo = FALSE,results='asis',out.width='100%'}
+roi.label.idx.list=c(seq_along(regions.of.interest.labels))
+if(length(regions.of.interest.labels)>1)roi.label.idx.list=c(roi.label.idx.list,list(seq_along(regions.of.interest.labels)))
+if(tumor_tissue_only.ROI.tokeep%in%regions.of.interest.labels)roi.label.idx.list=c(roi.label.idx.list,-1)
+for(roi.label.idx in roi.label.idx.list)
+{
+
+ cat("\\newpage\n")
+
+ if(length(roi.label.idx)==1&&roi.label.idx>0)
+ cat("# Region of interest",roi.label.idx,paste0("(",regions.of.interest.labels[roi.label.idx],")"),"\n")
+
+ if(length(roi.label.idx)==1&&roi.label.idx==-1)
+ {
+   if(any(tumor_tissue_only.ROI.toremove%in%regions.of.interest.labels))
+   {
+    cat("# Region of interest",tumor_tissue_only.ROI.tokeep," only ",paste0("(",tumor_tissue_only.ROI.tokeep," without ",paste(tumor_tissue_only.ROI.toremove[tumor_tissue_only.ROI.toremove%in%regions.of.interest.labels],collapse=", "),")"),"\n")
+    cat("Region of interest Tumor tissue (green) without",paste(tumor_tissue_only.ROI.toremove[tumor_tissue_only.ROI.toremove%in%regions.of.interest.labels],"(red)",collapse=", "),"\n")
+   }
+   else
+   {
+    cat("# Region of interest",tumor_tissue_only.ROI.tokeep," only ",paste0("(",tumor_tissue_only.ROI.tokeep,")"),"\n")
+   }
+ }	 
+
+ if(length(roi.label.idx)>1)
+ cat("# Regions of interest",paste(roi.label.idx,collapse=" & "),paste0("(",paste(regions.of.interest.labels[roi.label.idx],collapse=" & "),")"),"\n")
+
+ cat("\n")
+ cat("\\includegraphics[width=\\textwidth,height=0.5\\textheight]{{",figdir,"/image_composite_roi_",paste(roi.label.idx,collapse="_"),".pdf}}\n",sep="")
+ cat("\n")
+
+if(tumor_marker_present)
+{
+ cat("## Tissue segmentation\n")
+
+ cat("\n")		
+ tmptable=get_formated_tissue_type_summary_table(roi.label.idx=roi.label.idx)
+ print(knitr::kable(tmptable,row.names=FALSE,booktabs = TRUE,linesep="",escape=FALSE,align="r"))
+ cat("\n")
+ cat("Density=(Number of cells in tissue)/(total tissue area)\n")
+ cat("\n")
+}
+
+ cat("## Markers thresholding\n")
+
+ cat("### Total\n")
+ cat("\\footnotesize\n")
+  cat("\n")
+  tmptable=get_formated_single_marker_summary_table(tissue.type="total",roi.label.idx=roi.label.idx)
+  print(knitr::kable(tmptable,row.names=FALSE,booktabs = TRUE,linesep="",escape=FALSE,align="r"))
+  cat("\n")
+  cat("Density=(number of marker-positve cells)/(total area)\n")
+  cat("\\vspace{1cm}\n")
+  cat("\\normalsize\n")
+  cat("\n")
+
+  if(tumor_marker_present)
+  {
+    cat("### Stroma\n")
+    cat("\\footnotesize\n")
+    cat("\n")
+    tmptable=get_formated_single_marker_summary_table(tissue.type="stroma",roi.label.idx=roi.label.idx)
+    print(knitr::kable(tmptable,row.names=FALSE,booktabs = TRUE,linesep="",escape=FALSE,align="r"))
+    cat("\n")
+    cat("Density=(number of marker-positve cells)/(total stroma area)\n")
+    cat("\\vspace{1cm}\n")
+    cat("\\normalsize\n")
+    cat("\n")
+
+    cat("### Tumor\n")
+    cat("\\footnotesize\n")
+    cat("\n")
+    tmptable=get_formated_single_marker_summary_table(tissue.type="tumor",roi.label.idx=roi.label.idx)
+    print(knitr::kable(tmptable,row.names=FALSE,booktabs = TRUE,linesep="",escape=FALSE,align="r"))
+    cat("\n")
+    cat("Density=(number of marker-positve cells)/(total tumor area)\n")
+    cat("\\vspace{1cm}\n")
+    cat("\\normalsize\n")
+    cat("\n")
+
+   if(flag_other_tissue)
+   {
+    cat("### Other\n")
+    cat("\\footnotesize\n")
+    cat("\n")
+    tmptable=get_formated_single_marker_summary_table(tissue.type="other",roi.label.idx=roi.label.idx)
+    print(knitr::kable(tmptable,row.names=FALSE,booktabs = TRUE,linesep="",escape=FALSE,align="r"))
+    cat("\n")
+    cat("Density=(number of marker-positve cells)/(total other area)\n")
+    cat("\\vspace{1cm}\n")
+    cat("\\normalsize\n")
+    cat("\n")
+   }
+  }
+  
+ cat("## Phenotypes\n")
+ cat("\\vspace{1cm}\n")
+ 
+ cat("\n")
+ cat("\\includegraphics[width=\\textwidth]{{",figdir,"/phenotypes_cell_count_roi_",paste(roi.label.idx,collapse="_"),".pdf}}\n",sep="")
+ cat("\n")
+
+ cat("### Total\n")
+
+ cat("\\footnotesize\n")
+  cat("\n")
+  tmptable=get_formated_phenotypes_summary_table(tissue.type="total",phenotypes.type="standard",roi.label.idx=roi.label.idx)
+  print(knitr::kable(tmptable,row.names=FALSE,booktabs = TRUE,linesep="",escape=FALSE,align="r"))
+  cat("\n")
+  cat("Density=(number of cells with phenotype)/(total area)\n")
+  cat("\\vspace{1cm}\n")
+  cat("\\normalsize\n")
+  cat("\n")
+
+  if(tumor_marker_present)
+  {
+    cat("### Stroma\n")
+    cat("\\footnotesize\n")
+    cat("\n")
+    tmptable=get_formated_phenotypes_summary_table(tissue.type="stroma",phenotypes.type="standard",roi.label.idx=roi.label.idx)
+    print(knitr::kable(tmptable,row.names=FALSE,booktabs = TRUE,linesep="",escape=FALSE,align="r"))
+    cat("\n")
+    cat("\\normalsize\n")
+    cat("Density=(number of cells with phenotype)/(total stroma area)\n")
+    cat("\\vspace{1cm}\n")
+    cat("\n")
+    
+    cat("### Tumor\n")
+    cat("\\footnotesize\n")
+    cat("\n")
+     tmptable=get_formated_phenotypes_summary_table(tissue.type="tumor",phenotypes.type="standard",roi.label.idx=roi.label.idx)
+    print(knitr::kable(tmptable,row.names=FALSE,booktabs = TRUE,linesep="",escape=FALSE,align="r"))
+    cat("\n")
+    cat("\\normalsize\n")
+    cat("Density=(number of cells with phenotype)/(total tumor area)\n")
+    cat("\\vspace{1cm}\n")
+    cat("\n")
+   
+    if(flag_other_tissue)
+    {
+    cat("### Other\n")
+    cat("\\footnotesize\n")
+    cat("\n")
+     tmptable=get_formated_phenotypes_summary_table(tissue.type="other",phenotypes.type="standard",roi.label.idx=roi.label.idx)
+    print(knitr::kable(tmptable,row.names=FALSE,booktabs = TRUE,linesep="",escape=FALSE,align="r"))
+    cat("\n")
+    cat("\\normalsize\n")
+    cat("Density=(number of cells with phenotype)/(total other area)\n")
+    cat("\\vspace{1cm}\n")
+    cat("\n")
+    }
+  }
+
+  cat("### Total (other phenotypes)\n")
+  cat("\\footnotesize\n")
+  cat("\n")
+  tmptable=get_formated_phenotypes_summary_table(tissue.type="total",phenotypes.type="other",roi.label.idx=roi.label.idx)
+  print(knitr::kable(tmptable,row.names=FALSE,booktabs = TRUE,linesep="",escape=FALSE,align="r"))
+  cat("\n")
+  cat("\\normalsize\n")
+  cat("Density=(number of cells with phenotype)/(total area)\n")
+  cat("\\vspace{1cm}\n")
+  cat("\n")
+
+ if(tumor_marker_present)
+ {
+    cat("### Stroma (other phenotypes)\n")
+    cat("\\footnotesize\n")
+    cat("\n")
+    tmptable=get_formated_phenotypes_summary_table(tissue.type="stroma",phenotypes.type="other",roi.label.idx=roi.label.idx)
+    print(knitr::kable(tmptable,row.names=FALSE,booktabs = TRUE,linesep="",escape=FALSE,align="r"))
+    cat("\n")
+    cat("\\normalsize\n")
+    cat("Density=(number of cells with phenotype)/(total stroma area)\n")
+    cat("\\vspace{1cm}\n")
+    cat("\n")
+    
+    cat("### Tumor (other phenotypes)\n")
+    cat("\\footnotesize\n")
+    cat("\n")
+    tmptable=get_formated_phenotypes_summary_table(tissue.type="tumor",phenotypes.type="other",roi.label.idx=roi.label.idx)
+    print(knitr::kable(tmptable,row.names=FALSE,booktabs = TRUE,linesep="",escape=FALSE,align="r"))
+    cat("\n")
+    cat("\\normalsize\n")
+    cat("Density=(number of cells with phenotype)/(total tumor area)\n")
+    cat("\\vspace{1cm}\n")
+    cat("\n")
+
+    if(flag_other_tissue)
+    {
+     cat("### Other (other phenotypes)\n")
+     cat("\\footnotesize\n")
+     cat("\n")
+     tmptable=get_formated_phenotypes_summary_table(tissue.type="other",phenotypes.type="other",roi.label.idx=roi.label.idx)
+     print(knitr::kable(tmptable,row.names=FALSE,booktabs = TRUE,linesep="",escape=FALSE,align="r"))
+     cat("\n")
+     cat("\\normalsize\n")
+     cat("Density=(number of cells with phenotype)/(total other area)\n")
+     cat("\\vspace{1cm}\n")
+     cat("\n")
+    }
+  }
+}
+```

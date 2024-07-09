@@ -1,0 +1,2596 @@
+id,x,y,label
+1,34796,44617,Tumor tissue
+1,34807,44617,Tumor tissue
+1,34841,44605,Tumor tissue
+1,34921,44594,Tumor tissue
+1,35011,44583,Tumor tissue
+1,35102,44549,Tumor tissue
+1,35238,44503,Tumor tissue
+1,35386,44458,Tumor tissue
+1,35488,44424,Tumor tissue
+1,35533,44413,Tumor tissue
+1,35567,44413,Tumor tissue
+1,35613,44401,Tumor tissue
+1,35670,44378,Tumor tissue
+1,35726,44367,Tumor tissue
+1,35772,44367,Tumor tissue
+1,35806,44367,Tumor tissue
+1,35840,44356,Tumor tissue
+1,35897,44333,Tumor tissue
+1,35987,44310,Tumor tissue
+1,36089,44288,Tumor tissue
+1,36169,44265,Tumor tissue
+1,36248,44242,Tumor tissue
+1,36339,44220,Tumor tissue
+1,36441,44208,Tumor tissue
+1,36577,44186,Tumor tissue
+1,36691,44163,Tumor tissue
+1,36759,44152,Tumor tissue
+1,36850,44140,Tumor tissue
+1,36963,44129,Tumor tissue
+1,37088,44095,Tumor tissue
+1,37202,44061,Tumor tissue
+1,37304,44038,Tumor tissue
+1,37429,44015,Tumor tissue
+1,37554,43993,Tumor tissue
+1,37678,43959,Tumor tissue
+1,37815,43925,Tumor tissue
+1,37985,43891,Tumor tissue
+1,38178,43834,Tumor tissue
+1,38325,43777,Tumor tissue
+1,38439,43743,Tumor tissue
+1,38530,43709,Tumor tissue
+1,38620,43686,Tumor tissue
+1,38734,43664,Tumor tissue
+1,38847,43607,Tumor tissue
+1,38961,43573,Tumor tissue
+1,39063,43550,Tumor tissue
+1,39165,43505,Tumor tissue
+1,39301,43459,Tumor tissue
+1,39460,43414,Tumor tissue
+1,39630,43369,Tumor tissue
+1,39789,43312,Tumor tissue
+1,39914,43255,Tumor tissue
+1,40039,43232,Tumor tissue
+1,40164,43198,Tumor tissue
+1,40255,43153,Tumor tissue
+1,40345,43130,Tumor tissue
+1,40447,43108,Tumor tissue
+1,40538,43085,Tumor tissue
+1,40629,43062,Tumor tissue
+1,40754,43028,Tumor tissue
+1,40890,42994,Tumor tissue
+1,41026,42960,Tumor tissue
+1,41151,42915,Tumor tissue
+1,41253,42892,Tumor tissue
+1,41355,42881,Tumor tissue
+1,41446,42858,Tumor tissue
+1,41560,42824,Tumor tissue
+1,41684,42790,Tumor tissue
+1,41809,42767,Tumor tissue
+1,41957,42722,Tumor tissue
+1,42116,42676,Tumor tissue
+1,42297,42642,Tumor tissue
+1,42456,42608,Tumor tissue
+1,42581,42574,Tumor tissue
+1,42717,42552,Tumor tissue
+1,42853,42529,Tumor tissue
+1,42990,42495,Tumor tissue
+1,43126,42461,Tumor tissue
+1,43251,42427,Tumor tissue
+1,43387,42393,Tumor tissue
+1,43534,42347,Tumor tissue
+1,43659,42313,Tumor tissue
+1,43807,42279,Tumor tissue
+1,43977,42245,Tumor tissue
+1,44125,42223,Tumor tissue
+1,44261,42177,Tumor tissue
+1,44386,42121,Tumor tissue
+1,44488,42086,Tumor tissue
+1,44567,42052,Tumor tissue
+1,44635,42007,Tumor tissue
+1,44715,41984,Tumor tissue
+1,44794,41962,Tumor tissue
+1,44862,41916,Tumor tissue
+1,44930,41882,Tumor tissue
+1,44998,41860,Tumor tissue
+1,45066,41837,Tumor tissue
+1,45112,41814,Tumor tissue
+1,45146,41791,Tumor tissue
+1,45180,41769,Tumor tissue
+1,45203,41757,Tumor tissue
+1,45225,41746,Tumor tissue
+1,45237,41723,Tumor tissue
+1,45237,41701,Tumor tissue
+1,45248,41667,Tumor tissue
+1,45271,41621,Tumor tissue
+1,45293,41576,Tumor tissue
+1,45316,41530,Tumor tissue
+1,45339,41462,Tumor tissue
+1,45350,41338,Tumor tissue
+1,45362,41167,Tumor tissue
+1,45384,40997,Tumor tissue
+1,45430,40827,Tumor tissue
+1,45464,40680,Tumor tissue
+1,45475,40566,Tumor tissue
+1,45498,40441,Tumor tissue
+1,45509,40328,Tumor tissue
+1,45509,40226,Tumor tissue
+1,45520,40146,Tumor tissue
+1,45532,40089,Tumor tissue
+1,45532,40033,Tumor tissue
+1,45532,39976,Tumor tissue
+1,45532,39885,Tumor tissue
+1,45532,39772,Tumor tissue
+1,45532,39647,Tumor tissue
+1,45543,39522,Tumor tissue
+1,45554,39386,Tumor tissue
+1,45554,39250,Tumor tissue
+1,45554,39102,Tumor tissue
+1,45554,38955,Tumor tissue
+1,45554,38830,Tumor tissue
+1,45554,38705,Tumor tissue
+1,45554,38603,Tumor tissue
+1,45554,38490,Tumor tissue
+1,45543,38376,Tumor tissue
+1,45532,38263,Tumor tissue
+1,45509,38138,Tumor tissue
+1,45486,37990,Tumor tissue
+1,45486,37809,Tumor tissue
+1,45486,37616,Tumor tissue
+1,45475,37332,Tumor tissue
+1,45464,37060,Tumor tissue
+1,45464,36890,Tumor tissue
+1,45464,36731,Tumor tissue
+1,45464,36561,Tumor tissue
+1,45464,36391,Tumor tissue
+1,45464,36232,Tumor tissue
+1,45464,36096,Tumor tissue
+1,45464,35948,Tumor tissue
+1,45464,35789,Tumor tissue
+1,45464,35630,Tumor tissue
+1,45464,35471,Tumor tissue
+1,45452,35245,Tumor tissue
+1,45407,34995,Tumor tissue
+1,45362,34813,Tumor tissue
+1,45350,34655,Tumor tissue
+1,45327,34518,Tumor tissue
+1,45282,34394,Tumor tissue
+1,45248,34291,Tumor tissue
+1,45237,34201,Tumor tissue
+1,45237,34133,Tumor tissue
+1,45225,34087,Tumor tissue
+1,45214,34053,Tumor tissue
+1,45191,33962,Tumor tissue
+1,45157,33826,Tumor tissue
+1,45135,33690,Tumor tissue
+1,45101,33543,Tumor tissue
+1,45066,33406,Tumor tissue
+1,45044,33270,Tumor tissue
+1,45021,33134,Tumor tissue
+1,44987,32987,Tumor tissue
+1,44930,32828,Tumor tissue
+1,44874,32669,Tumor tissue
+1,44828,32521,Tumor tissue
+1,44783,32385,Tumor tissue
+1,44726,32249,Tumor tissue
+1,44681,32136,Tumor tissue
+1,44658,32045,Tumor tissue
+1,44624,31943,Tumor tissue
+1,44590,31841,Tumor tissue
+1,44567,31750,Tumor tissue
+1,44533,31636,Tumor tissue
+1,44488,31500,Tumor tissue
+1,44454,31375,Tumor tissue
+1,44420,31251,Tumor tissue
+1,44386,31103,Tumor tissue
+1,44363,30933,Tumor tissue
+1,44317,30717,Tumor tissue
+1,44272,30513,Tumor tissue
+1,44249,30366,Tumor tissue
+1,44227,30207,Tumor tissue
+1,44215,30036,Tumor tissue
+1,44204,29878,Tumor tissue
+1,44193,29741,Tumor tissue
+1,44193,29605,Tumor tissue
+1,44193,29469,Tumor tissue
+1,44193,29344,Tumor tissue
+1,44193,29197,Tumor tissue
+1,44181,29004,Tumor tissue
+1,44170,28811,Tumor tissue
+1,44170,28652,Tumor tissue
+1,44170,28471,Tumor tissue
+1,44170,28266,Tumor tissue
+1,44170,28074,Tumor tissue
+1,44170,27881,Tumor tissue
+1,44170,27688,Tumor tissue
+1,44181,27518,Tumor tissue
+1,44193,27381,Tumor tissue
+1,44193,27245,Tumor tissue
+1,44204,27098,Tumor tissue
+1,44215,26905,Tumor tissue
+1,44227,26712,Tumor tissue
+1,44261,26564,Tumor tissue
+1,44283,26428,Tumor tissue
+1,44283,26326,Tumor tissue
+1,44283,26247,Tumor tissue
+1,44283,26179,Tumor tissue
+1,44283,26122,Tumor tissue
+1,44283,26088,Tumor tissue
+1,44283,26065,Tumor tissue
+1,44283,26043,Tumor tissue
+1,44261,25872,Tumor tissue
+1,44227,25589,Tumor tissue
+1,44215,25362,Tumor tissue
+1,44193,25135,Tumor tissue
+1,44159,24874,Tumor tissue
+1,44136,24624,Tumor tissue
+1,44113,24397,Tumor tissue
+1,44102,24238,Tumor tissue
+1,44102,24159,Tumor tissue
+1,44102,24102,Tumor tissue
+1,44102,24057,Tumor tissue
+1,44102,24000,Tumor tissue
+1,44102,23943,Tumor tissue
+1,44102,23898,Tumor tissue
+1,44102,23853,Tumor tissue
+1,44102,23785,Tumor tissue
+1,44102,23682,Tumor tissue
+1,44102,23569,Tumor tissue
+1,44102,23444,Tumor tissue
+1,44102,23308,Tumor tissue
+1,44102,23172,Tumor tissue
+1,44102,23013,Tumor tissue
+1,44102,22854,Tumor tissue
+1,44102,22707,Tumor tissue
+1,44079,22548,Tumor tissue
+1,44056,22400,Tumor tissue
+1,44056,22287,Tumor tissue
+1,44056,22196,Tumor tissue
+1,44045,22117,Tumor tissue
+1,44034,22060,Tumor tissue
+1,44022,21980,Tumor tissue
+1,44000,21878,Tumor tissue
+1,43988,21788,Tumor tissue
+1,43988,21708,Tumor tissue
+1,43977,21629,Tumor tissue
+1,43966,21561,Tumor tissue
+1,43954,21493,Tumor tissue
+1,43932,21413,Tumor tissue
+1,43909,21345,Tumor tissue
+1,43898,21266,Tumor tissue
+1,43898,21141,Tumor tissue
+1,43886,20971,Tumor tissue
+1,43875,20800,Tumor tissue
+1,43863,20619,Tumor tissue
+1,43841,20426,Tumor tissue
+1,43807,20233,Tumor tissue
+1,43773,20029,Tumor tissue
+1,43739,19791,Tumor tissue
+1,43693,19586,Tumor tissue
+1,43659,19450,Tumor tissue
+1,43625,19314,Tumor tissue
+1,43591,19201,Tumor tissue
+1,43568,19110,Tumor tissue
+1,43546,19019,Tumor tissue
+1,43534,18951,Tumor tissue
+1,43534,18917,Tumor tissue
+1,43534,18894,Tumor tissue
+1,43523,18883,Tumor tissue
+1,43512,18860,Tumor tissue
+1,43512,18792,Tumor tissue
+1,43500,18713,Tumor tissue
+1,43489,18645,Tumor tissue
+1,43478,18577,Tumor tissue
+1,43466,18520,Tumor tissue
+1,43455,18463,Tumor tissue
+1,43444,18406,Tumor tissue
+1,43444,18350,Tumor tissue
+1,43432,18304,Tumor tissue
+1,43421,18259,Tumor tissue
+1,43421,18202,Tumor tissue
+1,43421,18168,Tumor tissue
+1,43421,18134,Tumor tissue
+1,43421,18100,Tumor tissue
+1,43421,18066,Tumor tissue
+1,43421,18032,Tumor tissue
+1,43421,17987,Tumor tissue
+1,43410,17941,Tumor tissue
+1,43398,17873,Tumor tissue
+1,43387,17760,Tumor tissue
+1,43353,17635,Tumor tissue
+1,43319,17521,Tumor tissue
+1,43307,17419,Tumor tissue
+1,43296,17306,Tumor tissue
+1,43262,17204,Tumor tissue
+1,43228,17113,Tumor tissue
+1,43205,17033,Tumor tissue
+1,43194,16954,Tumor tissue
+1,43194,16863,Tumor tissue
+1,43183,16784,Tumor tissue
+1,43160,16704,Tumor tissue
+1,43137,16568,Tumor tissue
+1,43114,16409,Tumor tissue
+1,43092,16273,Tumor tissue
+1,43058,16103,Tumor tissue
+1,43012,15921,Tumor tissue
+1,42978,15740,Tumor tissue
+1,42933,15570,Tumor tissue
+1,42887,15468,Tumor tissue
+1,42876,15422,Tumor tissue
+1,42853,15354,Tumor tissue
+1,42785,15195,Tumor tissue
+1,42706,15025,Tumor tissue
+1,42638,14866,Tumor tissue
+1,42558,14651,Tumor tissue
+1,42456,14378,Tumor tissue
+1,42354,14095,Tumor tissue
+1,42263,13845,Tumor tissue
+1,42184,13629,Tumor tissue
+1,42116,13425,Tumor tissue
+1,42070,13300,Tumor tissue
+1,42036,13187,Tumor tissue
+1,42002,13062,Tumor tissue
+1,41980,12983,Tumor tissue
+1,41957,12915,Tumor tissue
+1,41946,12869,Tumor tissue
+1,41946,12813,Tumor tissue
+1,41934,12744,Tumor tissue
+1,41923,12665,Tumor tissue
+1,41911,12597,Tumor tissue
+1,41900,12529,Tumor tissue
+1,41889,12472,Tumor tissue
+1,41877,12438,Tumor tissue
+1,41877,12404,Tumor tissue
+1,41866,12381,Tumor tissue
+1,41855,12359,Tumor tissue
+1,41843,12325,Tumor tissue
+1,41832,12279,Tumor tissue
+1,41832,12245,Tumor tissue
+1,41821,12211,Tumor tissue
+1,41798,12177,Tumor tissue
+1,41753,12132,Tumor tissue
+1,41707,12075,Tumor tissue
+1,41673,12041,Tumor tissue
+1,41628,12030,Tumor tissue
+1,41605,12018,Tumor tissue
+1,41605,11996,Tumor tissue
+1,41594,11973,Tumor tissue
+1,41571,11962,Tumor tissue
+1,41548,11962,Tumor tissue
+1,41514,11950,Tumor tissue
+1,41469,11939,Tumor tissue
+1,41435,11927,Tumor tissue
+1,41401,11916,Tumor tissue
+1,41367,11905,Tumor tissue
+1,41344,11893,Tumor tissue
+1,41310,11882,Tumor tissue
+1,41276,11859,Tumor tissue
+1,41265,11837,Tumor tissue
+1,41242,11825,Tumor tissue
+1,41196,11825,Tumor tissue
+1,41162,11814,Tumor tissue
+1,41140,11803,Tumor tissue
+1,41117,11803,Tumor tissue
+1,41094,11791,Tumor tissue
+1,41060,11780,Tumor tissue
+1,41026,11780,Tumor tissue
+1,40981,11780,Tumor tissue
+1,40935,11780,Tumor tissue
+1,40901,11780,Tumor tissue
+1,40845,11780,Tumor tissue
+1,40799,11780,Tumor tissue
+1,40777,11791,Tumor tissue
+1,40754,11803,Tumor tissue
+1,40720,11803,Tumor tissue
+1,40663,11814,Tumor tissue
+1,40595,11848,Tumor tissue
+1,40516,11893,Tumor tissue
+1,40459,11916,Tumor tissue
+1,40425,11927,Tumor tissue
+1,40379,11950,Tumor tissue
+1,40323,11984,Tumor tissue
+1,40266,12018,Tumor tissue
+1,40220,12030,Tumor tissue
+1,40164,12041,Tumor tissue
+1,40096,12064,Tumor tissue
+1,40016,12086,Tumor tissue
+1,39925,12109,Tumor tissue
+1,39801,12132,Tumor tissue
+1,39653,12166,Tumor tissue
+1,39528,12222,Tumor tissue
+1,39426,12257,Tumor tissue
+1,39313,12279,Tumor tissue
+1,39222,12302,Tumor tissue
+1,39176,12302,Tumor tissue
+1,39131,12302,Tumor tissue
+1,39097,12302,Tumor tissue
+1,39063,12302,Tumor tissue
+1,39029,12302,Tumor tissue
+1,38995,12302,Tumor tissue
+1,38961,12302,Tumor tissue
+1,38915,12291,Tumor tissue
+1,38847,12257,Tumor tissue
+1,38756,12166,Tumor tissue
+1,38643,12064,Tumor tissue
+1,38552,11984,Tumor tissue
+1,38473,11916,Tumor tissue
+1,38393,11871,Tumor tissue
+1,38337,11825,Tumor tissue
+1,38280,11791,Tumor tissue
+1,38223,11757,Tumor tissue
+1,38200,11723,Tumor tissue
+1,38189,11701,Tumor tissue
+1,38166,11689,Tumor tissue
+1,38132,11689,Tumor tissue
+1,38098,11667,Tumor tissue
+1,38064,11621,Tumor tissue
+1,38019,11587,Tumor tissue
+1,37985,11576,Tumor tissue
+1,37951,11553,Tumor tissue
+1,37894,11508,Tumor tissue
+1,37815,11474,Tumor tissue
+1,37735,11428,Tumor tissue
+1,37667,11383,Tumor tissue
+1,37576,11360,Tumor tissue
+1,37485,11326,Tumor tissue
+1,37406,11269,Tumor tissue
+1,37270,11224,Tumor tissue
+1,37156,11201,Tumor tissue
+1,37100,11190,Tumor tissue
+1,37020,11190,Tumor tissue
+1,36929,11190,Tumor tissue
+1,36850,11190,Tumor tissue
+1,36770,11190,Tumor tissue
+1,36702,11190,Tumor tissue
+1,36657,11190,Tumor tissue
+1,36612,11190,Tumor tissue
+1,36566,11190,Tumor tissue
+1,36521,11190,Tumor tissue
+1,36475,11190,Tumor tissue
+1,36419,11190,Tumor tissue
+1,36351,11190,Tumor tissue
+1,36294,11190,Tumor tissue
+1,36248,11190,Tumor tissue
+1,36192,11190,Tumor tissue
+1,36124,11190,Tumor tissue
+1,36055,11190,Tumor tissue
+1,35976,11190,Tumor tissue
+1,35885,11190,Tumor tissue
+1,35817,11190,Tumor tissue
+1,35749,11190,Tumor tissue
+1,35670,11190,Tumor tissue
+1,35613,11201,Tumor tissue
+1,35567,11213,Tumor tissue
+1,35533,11213,Tumor tissue
+1,35511,11213,Tumor tissue
+1,35488,11201,Tumor tissue
+1,35465,11156,Tumor tissue
+1,35431,11122,Tumor tissue
+1,35397,11099,Tumor tissue
+1,35375,11065,Tumor tissue
+1,35363,11042,Tumor tissue
+1,35363,11020,Tumor tissue
+1,35352,11008,Tumor tissue
+1,35329,11008,Tumor tissue
+1,35295,11008,Tumor tissue
+1,35261,11008,Tumor tissue
+1,35216,10997,Tumor tissue
+1,35159,10974,Tumor tissue
+1,35113,10963,Tumor tissue
+1,35091,10952,Tumor tissue
+1,35057,10929,Tumor tissue
+1,35000,10906,Tumor tissue
+1,34966,10895,Tumor tissue
+1,34943,10895,Tumor tissue
+1,34921,10895,Tumor tissue
+1,34909,10884,Tumor tissue
+1,34898,10872,Tumor tissue
+1,34875,10872,Tumor tissue
+1,34830,10872,Tumor tissue
+1,34762,10872,Tumor tissue
+1,34694,10872,Tumor tissue
+1,34614,10872,Tumor tissue
+1,34512,10872,Tumor tissue
+1,34444,10872,Tumor tissue
+1,34421,10872,Tumor tissue
+1,34399,10872,Tumor tissue
+1,34376,10872,Tumor tissue
+1,34353,10872,Tumor tissue
+1,34330,10872,Tumor tissue
+1,34296,10884,Tumor tissue
+1,34262,10895,Tumor tissue
+1,34240,10906,Tumor tissue
+1,34217,10929,Tumor tissue
+1,34183,10952,Tumor tissue
+1,34137,10986,Tumor tissue
+1,34092,11008,Tumor tissue
+1,34058,11020,Tumor tissue
+1,34024,11054,Tumor tissue
+1,34001,11088,Tumor tissue
+1,33979,11111,Tumor tissue
+1,33933,11133,Tumor tissue
+1,33899,11167,Tumor tissue
+1,33888,11201,Tumor tissue
+1,33888,11224,Tumor tissue
+1,33876,11235,Tumor tissue
+1,33854,11247,Tumor tissue
+1,33842,11269,Tumor tissue
+1,33831,11292,Tumor tissue
+1,33808,11315,Tumor tissue
+1,33786,11337,Tumor tissue
+1,33774,11371,Tumor tissue
+1,33752,11417,Tumor tissue
+1,33695,11462,Tumor tissue
+1,33638,11530,Tumor tissue
+1,33581,11621,Tumor tissue
+1,33513,11701,Tumor tissue
+1,33457,11769,Tumor tissue
+1,33411,11803,Tumor tissue
+1,33354,11837,Tumor tissue
+1,33320,11893,Tumor tissue
+1,33309,11916,Tumor tissue
+1,33275,11939,Tumor tissue
+1,33230,11973,Tumor tissue
+1,33196,12007,Tumor tissue
+1,33150,12052,Tumor tissue
+1,33093,12098,Tumor tissue
+1,33048,12132,Tumor tissue
+1,33003,12166,Tumor tissue
+1,32957,12222,Tumor tissue
+1,32912,12268,Tumor tissue
+1,32866,12313,Tumor tissue
+1,32832,12359,Tumor tissue
+1,32810,12381,Tumor tissue
+1,32776,12415,Tumor tissue
+1,32753,12449,Tumor tissue
+1,32742,12472,Tumor tissue
+1,32719,12483,Tumor tissue
+1,32696,12506,Tumor tissue
+1,32673,12552,Tumor tissue
+1,32651,12586,Tumor tissue
+1,32605,12631,Tumor tissue
+1,32549,12710,Tumor tissue
+1,32503,12801,Tumor tissue
+1,32446,12892,Tumor tissue
+1,32390,12983,Tumor tissue
+1,32333,13062,Tumor tissue
+1,32288,13130,Tumor tissue
+1,32242,13198,Tumor tissue
+1,32174,13278,Tumor tissue
+1,32106,13368,Tumor tissue
+1,32049,13437,Tumor tissue
+1,32027,13482,Tumor tissue
+1,32004,13516,Tumor tissue
+1,31970,13561,Tumor tissue
+1,31936,13607,Tumor tissue
+1,31902,13652,Tumor tissue
+1,31868,13720,Tumor tissue
+1,31822,13800,Tumor tissue
+1,31766,13879,Tumor tissue
+1,31720,13947,Tumor tissue
+1,31686,14049,Tumor tissue
+1,31641,14140,Tumor tissue
+1,31607,14197,Tumor tissue
+1,31584,14265,Tumor tissue
+1,31561,14322,Tumor tissue
+1,31527,14378,Tumor tissue
+1,31493,14446,Tumor tissue
+1,31470,14503,Tumor tissue
+1,31436,14549,Tumor tissue
+1,31391,14594,Tumor tissue
+1,31357,14639,Tumor tissue
+1,31334,14673,Tumor tissue
+1,31300,14707,Tumor tissue
+1,31244,14764,Tumor tissue
+1,31198,14821,Tumor tissue
+1,31164,14855,Tumor tissue
+1,31119,14878,Tumor tissue
+1,31073,14912,Tumor tissue
+1,31017,14957,Tumor tissue
+1,30960,15002,Tumor tissue
+1,30880,15059,Tumor tissue
+1,30778,15116,Tumor tissue
+1,30699,15173,Tumor tissue
+1,30597,15263,Tumor tissue
+1,30494,15365,Tumor tissue
+1,30415,15434,Tumor tissue
+1,30336,15502,Tumor tissue
+1,30279,15558,Tumor tissue
+1,30245,15581,Tumor tissue
+1,30222,15615,Tumor tissue
+1,30199,15649,Tumor tissue
+1,30177,15660,Tumor tissue
+1,30154,15672,Tumor tissue
+1,30143,15695,Tumor tissue
+1,30143,15717,Tumor tissue
+1,30143,15751,Tumor tissue
+1,30131,15808,Tumor tissue
+1,30109,15899,Tumor tissue
+1,30097,15978,Tumor tissue
+1,30097,16035,Tumor tissue
+1,30097,16092,Tumor tissue
+1,30097,16126,Tumor tissue
+1,30097,16171,Tumor tissue
+1,30097,16239,Tumor tissue
+1,30086,16319,Tumor tissue
+1,30063,16432,Tumor tissue
+1,30041,16546,Tumor tissue
+1,30018,16648,Tumor tissue
+1,29995,16784,Tumor tissue
+1,29950,16943,Tumor tissue
+1,29904,17101,Tumor tissue
+1,29870,17249,Tumor tissue
+1,29802,17396,Tumor tissue
+1,29734,17533,Tumor tissue
+1,29700,17612,Tumor tissue
+1,29689,17646,Tumor tissue
+1,29689,17669,Tumor tissue
+1,29689,17691,Tumor tissue
+1,29677,17737,Tumor tissue
+1,29655,17794,Tumor tissue
+1,29632,17839,Tumor tissue
+1,29609,17896,Tumor tissue
+1,29587,17952,Tumor tissue
+1,29575,18009,Tumor tissue
+1,29564,18066,Tumor tissue
+1,29541,18100,Tumor tissue
+1,29530,18134,Tumor tissue
+1,29518,18168,Tumor tissue
+1,29507,18191,Tumor tissue
+1,29507,18213,Tumor tissue
+1,29496,18247,Tumor tissue
+1,29473,18304,Tumor tissue
+1,29450,18395,Tumor tissue
+1,29416,18486,Tumor tissue
+1,29382,18565,Tumor tissue
+1,29360,18667,Tumor tissue
+1,29326,18769,Tumor tissue
+1,29280,18849,Tumor tissue
+1,29246,18917,Tumor tissue
+1,29212,19008,Tumor tissue
+1,29178,19087,Tumor tissue
+1,29155,19144,Tumor tissue
+1,29133,19189,Tumor tissue
+1,29110,19246,Tumor tissue
+1,29076,19337,Tumor tissue
+1,29030,19405,Tumor tissue
+1,29008,19462,Tumor tissue
+1,28985,19530,Tumor tissue
+1,28951,19586,Tumor tissue
+1,28928,19632,Tumor tissue
+1,28906,19688,Tumor tissue
+1,28883,19757,Tumor tissue
+1,28860,19813,Tumor tissue
+1,28826,19859,Tumor tissue
+1,28792,19915,Tumor tissue
+1,28769,19972,Tumor tissue
+1,28747,20029,Tumor tissue
+1,28724,20086,Tumor tissue
+1,28690,20142,Tumor tissue
+1,28667,20188,Tumor tissue
+1,28656,20222,Tumor tissue
+1,28622,20278,Tumor tissue
+1,28599,20324,Tumor tissue
+1,28588,20369,Tumor tissue
+1,28577,20415,Tumor tissue
+1,28565,20437,Tumor tissue
+1,28554,20471,Tumor tissue
+1,28554,20539,Tumor tissue
+1,28554,20630,Tumor tissue
+1,28542,20721,Tumor tissue
+1,28531,20823,Tumor tissue
+1,28531,20948,Tumor tissue
+1,28531,21061,Tumor tissue
+1,28531,21152,Tumor tissue
+1,28531,21209,Tumor tissue
+1,28531,21266,Tumor tissue
+1,28542,21436,Tumor tissue
+1,28577,21663,Tumor tissue
+1,28611,21890,Tumor tissue
+1,28633,22139,Tumor tissue
+1,28667,22423,Tumor tissue
+1,28690,22695,Tumor tissue
+1,28701,22945,Tumor tissue
+1,28724,23149,Tumor tissue
+1,28735,23285,Tumor tissue
+1,28747,23421,Tumor tissue
+1,28758,23546,Tumor tissue
+1,28769,23660,Tumor tissue
+1,28781,23773,Tumor tissue
+1,28781,23887,Tumor tissue
+1,28804,23989,Tumor tissue
+1,28838,24091,Tumor tissue
+1,28849,24159,Tumor tissue
+1,28860,24193,Tumor tissue
+1,28872,24238,Tumor tissue
+1,28883,24272,Tumor tissue
+1,28894,24307,Tumor tissue
+1,28906,24363,Tumor tissue
+1,28928,24420,Tumor tissue
+1,28962,24477,Tumor tissue
+1,28996,24567,Tumor tissue
+1,29030,24670,Tumor tissue
+1,29076,24772,Tumor tissue
+1,29110,24874,Tumor tissue
+1,29155,24987,Tumor tissue
+1,29201,25089,Tumor tissue
+1,29223,25192,Tumor tissue
+1,29246,25282,Tumor tissue
+1,29257,25316,Tumor tissue
+1,29257,25339,Tumor tissue
+1,29292,25384,Tumor tissue
+1,29337,25430,Tumor tissue
+1,29348,25453,Tumor tissue
+1,29348,25475,Tumor tissue
+1,29371,25532,Tumor tissue
+1,29416,25657,Tumor tissue
+1,29473,25804,Tumor tissue
+1,29530,25929,Tumor tissue
+1,29575,26054,Tumor tissue
+1,29598,26133,Tumor tissue
+1,29598,26156,Tumor tissue
+1,29609,26179,Tumor tissue
+1,29632,26201,Tumor tissue
+1,29643,26235,Tumor tissue
+1,29643,26269,Tumor tissue
+1,29655,26303,Tumor tissue
+1,29677,26326,Tumor tissue
+1,29689,26338,Tumor tissue
+1,29689,26360,Tumor tissue
+1,29700,26383,Tumor tissue
+1,29723,26394,Tumor tissue
+1,29745,26417,Tumor tissue
+1,29757,26451,Tumor tissue
+1,29780,26485,Tumor tissue
+1,29814,26519,Tumor tissue
+1,29836,26542,Tumor tissue
+1,29859,26564,Tumor tissue
+1,29882,26576,Tumor tissue
+1,29938,26587,Tumor tissue
+1,30018,26610,Tumor tissue
+1,30086,26621,Tumor tissue
+1,30154,26633,Tumor tissue
+1,30211,26644,Tumor tissue
+1,30245,26644,Tumor tissue
+1,30279,26644,Tumor tissue
+1,30313,26644,Tumor tissue
+1,30336,26644,Tumor tissue
+1,30381,26644,Tumor tissue
+1,30472,26621,Tumor tissue
+1,30551,26599,Tumor tissue
+1,30585,26587,Tumor tissue
+1,30631,26564,Tumor tissue
+1,30687,26553,Tumor tissue
+1,30756,26542,Tumor tissue
+1,30846,26519,Tumor tissue
+1,30937,26496,Tumor tissue
+1,31017,26474,Tumor tissue
+1,31096,26462,Tumor tissue
+1,31164,26451,Tumor tissue
+1,31209,26440,Tumor tissue
+1,31244,26440,Tumor tissue
+1,31266,26428,Tumor tissue
+1,31334,26406,Tumor tissue
+1,31436,26372,Tumor tissue
+1,31516,26338,Tumor tissue
+1,31584,26326,Tumor tissue
+1,31629,26315,Tumor tissue
+1,31652,26303,Tumor tissue
+1,31686,26303,Tumor tissue
+1,31720,26292,Tumor tissue
+1,31788,26258,Tumor tissue
+1,31890,26224,Tumor tissue
+1,31947,26213,Tumor tissue
+1,31993,26201,Tumor tissue
+1,32049,26179,Tumor tissue
+1,32095,26167,Tumor tissue
+1,32151,26156,Tumor tissue
+1,32231,26133,Tumor tissue
+1,32299,26111,Tumor tissue
+1,32344,26099,Tumor tissue
+1,32401,26099,Tumor tissue
+1,32481,26099,Tumor tissue
+1,32583,26088,Tumor tissue
+1,32696,26077,Tumor tissue
+1,32787,26065,Tumor tissue
+1,32855,26054,Tumor tissue
+1,32934,26054,Tumor tissue
+1,33037,26054,Tumor tissue
+1,33150,26054,Tumor tissue
+1,33275,26043,Tumor tissue
+1,33388,26031,Tumor tissue
+1,33491,26031,Tumor tissue
+1,33604,26031,Tumor tissue
+1,33740,26020,Tumor tissue
+1,33854,26008,Tumor tissue
+1,33922,26008,Tumor tissue
+1,33979,26008,Tumor tissue
+1,34013,26008,Tumor tissue
+1,34058,26008,Tumor tissue
+1,34115,26008,Tumor tissue
+1,34149,26008,Tumor tissue
+1,34194,26008,Tumor tissue
+1,34240,26008,Tumor tissue
+1,34274,26020,Tumor tissue
+1,34330,26031,Tumor tissue
+1,34376,26043,Tumor tissue
+1,34399,26054,Tumor tissue
+1,34421,26054,Tumor tissue
+1,34433,26065,Tumor tissue
+1,34444,26088,Tumor tissue
+1,34455,26111,Tumor tissue
+1,34455,26133,Tumor tissue
+1,34467,26167,Tumor tissue
+1,34489,26190,Tumor tissue
+1,34512,26201,Tumor tissue
+1,34523,26235,Tumor tissue
+1,34523,26269,Tumor tissue
+1,34523,26292,Tumor tissue
+1,34523,26315,Tumor tissue
+1,34535,26338,Tumor tissue
+1,34546,26372,Tumor tissue
+1,34546,26406,Tumor tissue
+1,34546,26428,Tumor tissue
+1,34546,26462,Tumor tissue
+1,34546,26508,Tumor tissue
+1,34546,26542,Tumor tissue
+1,34535,26587,Tumor tissue
+1,34512,26644,Tumor tissue
+1,34478,26701,Tumor tissue
+1,34455,26746,Tumor tissue
+1,34455,26769,Tumor tissue
+1,34444,26780,Tumor tissue
+1,34421,26803,Tumor tissue
+1,34410,26837,Tumor tissue
+1,34399,26859,Tumor tissue
+1,34364,26894,Tumor tissue
+1,34330,26939,Tumor tissue
+1,34296,26984,Tumor tissue
+1,34262,27030,Tumor tissue
+1,34240,27086,Tumor tissue
+1,34206,27132,Tumor tissue
+1,34160,27166,Tumor tissue
+1,34126,27211,Tumor tissue
+1,34092,27279,Tumor tissue
+1,34047,27336,Tumor tissue
+1,34013,27370,Tumor tissue
+1,34001,27404,Tumor tissue
+1,33979,27438,Tumor tissue
+1,33945,27461,Tumor tissue
+1,33911,27484,Tumor tissue
+1,33888,27529,Tumor tissue
+1,33865,27563,Tumor tissue
+1,33820,27597,Tumor tissue
+1,33786,27642,Tumor tissue
+1,33763,27688,Tumor tissue
+1,33718,27744,Tumor tissue
+1,33672,27801,Tumor tissue
+1,33638,27847,Tumor tissue
+1,33593,27892,Tumor tissue
+1,33559,27915,Tumor tissue
+1,33536,27949,Tumor tissue
+1,33491,28005,Tumor tissue
+1,33445,28040,Tumor tissue
+1,33423,28074,Tumor tissue
+1,33388,28119,Tumor tissue
+1,33343,28153,Tumor tissue
+1,33309,28187,Tumor tissue
+1,33264,28232,Tumor tissue
+1,33218,28266,Tumor tissue
+1,33196,28289,Tumor tissue
+1,33161,28323,Tumor tissue
+1,33116,28357,Tumor tissue
+1,33071,28403,Tumor tissue
+1,33037,28448,Tumor tissue
+1,33003,28482,Tumor tissue
+1,32957,28527,Tumor tissue
+1,32912,28561,Tumor tissue
+1,32878,28595,Tumor tissue
+1,32844,28641,Tumor tissue
+1,32810,28686,Tumor tissue
+1,32787,28709,Tumor tissue
+1,32753,28709,Tumor tissue
+1,32696,28720,Tumor tissue
+1,32651,28754,Tumor tissue
+1,32594,28788,Tumor tissue
+1,32526,28811,Tumor tissue
+1,32458,28822,Tumor tissue
+1,32390,28822,Tumor tissue
+1,32356,28822,Tumor tissue
+1,32333,28822,Tumor tissue
+1,32310,28822,Tumor tissue
+1,32276,28822,Tumor tissue
+1,32242,28822,Tumor tissue
+1,32197,28822,Tumor tissue
+1,32117,28822,Tumor tissue
+1,32038,28822,Tumor tissue
+1,31958,28811,Tumor tissue
+1,31845,28777,Tumor tissue
+1,31754,28754,Tumor tissue
+1,31732,28743,Tumor tissue
+1,31720,28732,Tumor tissue
+1,31686,28720,Tumor tissue
+1,31652,28709,Tumor tissue
+1,31629,28698,Tumor tissue
+1,31595,28675,Tumor tissue
+1,31539,28652,Tumor tissue
+1,31493,28618,Tumor tissue
+1,31459,28595,Tumor tissue
+1,31414,28584,Tumor tissue
+1,31380,28550,Tumor tissue
+1,31346,28516,Tumor tissue
+1,31300,28493,Tumor tissue
+1,31255,28471,Tumor tissue
+1,31209,28437,Tumor tissue
+1,31153,28391,Tumor tissue
+1,31085,28357,Tumor tissue
+1,31028,28335,Tumor tissue
+1,30971,28289,Tumor tissue
+1,30914,28244,Tumor tissue
+1,30846,28210,Tumor tissue
+1,30756,28164,Tumor tissue
+1,30676,28108,Tumor tissue
+1,30619,28051,Tumor tissue
+1,30585,28028,Tumor tissue
+1,30563,28017,Tumor tissue
+1,30517,27983,Tumor tissue
+1,30472,27937,Tumor tissue
+1,30449,27915,Tumor tissue
+1,30426,27903,Tumor tissue
+1,30404,27881,Tumor tissue
+1,30381,27858,Tumor tissue
+1,30347,27835,Tumor tissue
+1,30302,27801,Tumor tissue
+1,30256,27756,Tumor tissue
+1,30211,27722,Tumor tissue
+1,30177,27699,Tumor tissue
+1,30154,27676,Tumor tissue
+1,30131,27654,Tumor tissue
+1,30097,27631,Tumor tissue
+1,30063,27608,Tumor tissue
+1,30041,27597,Tumor tissue
+1,30029,27586,Tumor tissue
+1,30006,27563,Tumor tissue
+1,29961,27529,Tumor tissue
+1,29916,27495,Tumor tissue
+1,29870,27472,Tumor tissue
+1,29825,27449,Tumor tissue
+1,29791,27427,Tumor tissue
+1,29745,27404,Tumor tissue
+1,29689,27381,Tumor tissue
+1,29621,27359,Tumor tissue
+1,29541,27336,Tumor tissue
+1,29484,27325,Tumor tissue
+1,29428,27313,Tumor tissue
+1,29371,27302,Tumor tissue
+1,29326,27302,Tumor tissue
+1,29292,27302,Tumor tissue
+1,29257,27302,Tumor tissue
+1,29212,27302,Tumor tissue
+1,29167,27302,Tumor tissue
+1,29133,27302,Tumor tissue
+1,29087,27302,Tumor tissue
+1,29019,27302,Tumor tissue
+1,28940,27325,Tumor tissue
+1,28883,27347,Tumor tissue
+1,28826,27347,Tumor tissue
+1,28758,27359,Tumor tissue
+1,28679,27415,Tumor tissue
+1,28565,27484,Tumor tissue
+1,28452,27529,Tumor tissue
+1,28361,27574,Tumor tissue
+1,28281,27620,Tumor tissue
+1,28191,27665,Tumor tissue
+1,28123,27699,Tumor tissue
+1,28043,27733,Tumor tissue
+1,27941,27779,Tumor tissue
+1,27862,27813,Tumor tissue
+1,27793,27835,Tumor tissue
+1,27725,27869,Tumor tissue
+1,27646,27903,Tumor tissue
+1,27566,27926,Tumor tissue
+1,27487,27971,Tumor tissue
+1,27408,28017,Tumor tissue
+1,27339,28062,Tumor tissue
+1,27260,28130,Tumor tissue
+1,27181,28198,Tumor tissue
+1,27124,28244,Tumor tissue
+1,27090,28266,Tumor tissue
+1,27067,28300,Tumor tissue
+1,27056,28335,Tumor tissue
+1,27044,28346,Tumor tissue
+1,27022,28357,Tumor tissue
+1,26999,28380,Tumor tissue
+1,26976,28403,Tumor tissue
+1,26965,28437,Tumor tissue
+1,26954,28459,Tumor tissue
+1,26942,28471,Tumor tissue
+1,26920,28516,Tumor tissue
+1,26874,28573,Tumor tissue
+1,26840,28607,Tumor tissue
+1,26817,28652,Tumor tissue
+1,26795,28709,Tumor tissue
+1,26761,28766,Tumor tissue
+1,26715,28822,Tumor tissue
+1,26670,28879,Tumor tissue
+1,26625,28936,Tumor tissue
+1,26590,28993,Tumor tissue
+1,26556,29038,Tumor tissue
+1,26522,29072,Tumor tissue
+1,26488,29117,Tumor tissue
+1,26454,29151,Tumor tissue
+1,26432,29174,Tumor tissue
+1,26409,29208,Tumor tissue
+1,26375,29254,Tumor tissue
+1,26329,29310,Tumor tissue
+1,26295,29367,Tumor tissue
+1,26261,29412,Tumor tissue
+1,26227,29446,Tumor tissue
+1,26205,29481,Tumor tissue
+1,26148,29549,Tumor tissue
+1,26080,29628,Tumor tissue
+1,26034,29707,Tumor tissue
+1,25978,29798,Tumor tissue
+1,25932,29866,Tumor tissue
+1,25910,29900,Tumor tissue
+1,25887,29934,Tumor tissue
+1,25853,29980,Tumor tissue
+1,25819,30002,Tumor tissue
+1,25796,30014,Tumor tissue
+1,25785,30036,Tumor tissue
+1,25773,30059,Tumor tissue
+1,25751,30071,Tumor tissue
+1,25728,30071,Tumor tissue
+1,25717,30082,Tumor tissue
+1,25717,30105,Tumor tissue
+1,25705,30116,Tumor tissue
+1,25683,30139,Tumor tissue
+1,25649,30184,Tumor tissue
+1,25614,30218,Tumor tissue
+1,25603,30241,Tumor tissue
+1,25603,30263,Tumor tissue
+1,25603,30286,Tumor tissue
+1,25580,30320,Tumor tissue
+1,25546,30366,Tumor tissue
+1,25535,30400,Tumor tissue
+1,25535,30434,Tumor tissue
+1,25524,30479,Tumor tissue
+1,25501,30513,Tumor tissue
+1,25490,30547,Tumor tissue
+1,25478,30604,Tumor tissue
+1,25456,30661,Tumor tissue
+1,25422,30717,Tumor tissue
+1,25387,30774,Tumor tissue
+1,25376,30819,Tumor tissue
+1,25376,30865,Tumor tissue
+1,25376,30922,Tumor tissue
+1,25353,30967,Tumor tissue
+1,25319,31024,Tumor tissue
+1,25285,31137,Tumor tissue
+1,25263,31239,Tumor tissue
+1,25251,31307,Tumor tissue
+1,25229,31387,Tumor tissue
+1,25206,31466,Tumor tissue
+1,25195,31523,Tumor tissue
+1,25195,31591,Tumor tissue
+1,25195,31682,Tumor tissue
+1,25195,31761,Tumor tissue
+1,25183,31841,Tumor tissue
+1,25172,31920,Tumor tissue
+1,25172,31977,Tumor tissue
+1,25172,32033,Tumor tissue
+1,25172,32090,Tumor tissue
+1,25172,32136,Tumor tissue
+1,25172,32192,Tumor tissue
+1,25172,32249,Tumor tissue
+1,25172,32283,Tumor tissue
+1,25161,32306,Tumor tissue
+1,25149,32328,Tumor tissue
+1,25149,32363,Tumor tissue
+1,25149,32408,Tumor tissue
+1,25149,32453,Tumor tissue
+1,25149,32510,Tumor tissue
+1,25149,32555,Tumor tissue
+1,25149,32578,Tumor tissue
+1,25149,32601,Tumor tissue
+1,25149,32623,Tumor tissue
+1,25149,32658,Tumor tissue
+1,25149,32703,Tumor tissue
+1,25149,32737,Tumor tissue
+1,25149,32771,Tumor tissue
+1,25149,32805,Tumor tissue
+1,25149,32839,Tumor tissue
+1,25149,32884,Tumor tissue
+1,25149,32930,Tumor tissue
+1,25149,32975,Tumor tissue
+1,25149,33009,Tumor tissue
+1,25149,33032,Tumor tissue
+1,25149,33055,Tumor tissue
+1,25149,33077,Tumor tissue
+1,25149,33111,Tumor tissue
+1,25149,33145,Tumor tissue
+1,25161,33179,Tumor tissue
+1,25172,33225,Tumor tissue
+1,25183,33282,Tumor tissue
+1,25195,33338,Tumor tissue
+1,25206,33395,Tumor tissue
+1,25240,33474,Tumor tissue
+1,25263,33554,Tumor tissue
+1,25297,33645,Tumor tissue
+1,25331,33735,Tumor tissue
+1,25342,33792,Tumor tissue
+1,25365,33838,Tumor tissue
+1,25387,33894,Tumor tissue
+1,25422,33985,Tumor tissue
+1,25467,34099,Tumor tissue
+1,25501,34189,Tumor tissue
+1,25524,34257,Tumor tissue
+1,25546,34337,Tumor tissue
+1,25580,34416,Tumor tissue
+1,25626,34496,Tumor tissue
+1,25671,34620,Tumor tissue
+1,25705,34734,Tumor tissue
+1,25739,34802,Tumor tissue
+1,25773,34870,Tumor tissue
+1,25807,34938,Tumor tissue
+1,25841,35018,Tumor tissue
+1,25864,35086,Tumor tissue
+1,25898,35142,Tumor tissue
+1,25932,35233,Tumor tissue
+1,25955,35324,Tumor tissue
+1,25989,35381,Tumor tissue
+1,26023,35437,Tumor tissue
+1,26057,35540,Tumor tissue
+1,26091,35642,Tumor tissue
+1,26114,35710,Tumor tissue
+1,26137,35778,Tumor tissue
+1,26159,35846,Tumor tissue
+1,26182,35925,Tumor tissue
+1,26205,35993,Tumor tissue
+1,26239,36050,Tumor tissue
+1,26261,36107,Tumor tissue
+1,26273,36164,Tumor tissue
+1,26295,36209,Tumor tissue
+1,26318,36266,Tumor tissue
+1,26363,36356,Tumor tissue
+1,26420,36436,Tumor tissue
+1,26477,36504,Tumor tissue
+1,26522,36572,Tumor tissue
+1,26556,36640,Tumor tissue
+1,26602,36708,Tumor tissue
+1,26636,36754,Tumor tissue
+1,26659,36776,Tumor tissue
+1,26670,36799,Tumor tissue
+1,26681,36810,Tumor tissue
+1,26715,36844,Tumor tissue
+1,26772,36912,Tumor tissue
+1,26829,36969,Tumor tissue
+1,26863,37003,Tumor tissue
+1,26886,37026,Tumor tissue
+1,26908,37049,Tumor tissue
+1,26931,37083,Tumor tissue
+1,26954,37128,Tumor tissue
+1,26988,37185,Tumor tissue
+1,27033,37230,Tumor tissue
+1,27078,37298,Tumor tissue
+1,27135,37400,Tumor tissue
+1,27192,37468,Tumor tissue
+1,27237,37525,Tumor tissue
+1,27283,37571,Tumor tissue
+1,27305,37605,Tumor tissue
+1,27305,37650,Tumor tissue
+1,27328,37673,Tumor tissue
+1,27374,37707,Tumor tissue
+1,27408,37763,Tumor tissue
+1,27430,37809,Tumor tissue
+1,27476,37866,Tumor tissue
+1,27521,37922,Tumor tissue
+1,27566,37990,Tumor tissue
+1,27623,38058,Tumor tissue
+1,27691,38127,Tumor tissue
+1,27759,38206,Tumor tissue
+1,27816,38274,Tumor tissue
+1,27862,38331,Tumor tissue
+1,27907,38388,Tumor tissue
+1,27975,38456,Tumor tissue
+1,28054,38535,Tumor tissue
+1,28123,38614,Tumor tissue
+1,28168,38671,Tumor tissue
+1,28213,38728,Tumor tissue
+1,28270,38785,Tumor tissue
+1,28315,38830,Tumor tissue
+1,28372,38898,Tumor tissue
+1,28440,38989,Tumor tissue
+1,28497,39068,Tumor tissue
+1,28554,39148,Tumor tissue
+1,28611,39227,Tumor tissue
+1,28656,39273,Tumor tissue
+1,28679,39307,Tumor tissue
+1,28701,39352,Tumor tissue
+1,28724,39375,Tumor tissue
+1,28747,39386,Tumor tissue
+1,28758,39409,Tumor tissue
+1,28769,39431,Tumor tissue
+1,28781,39454,Tumor tissue
+1,28804,39477,Tumor tissue
+1,28849,39534,Tumor tissue
+1,28906,39613,Tumor tissue
+1,28985,39715,Tumor tissue
+1,29076,39829,Tumor tissue
+1,29155,39931,Tumor tissue
+1,29235,40033,Tumor tissue
+1,29314,40135,Tumor tissue
+1,29382,40237,Tumor tissue
+1,29439,40294,Tumor tissue
+1,29473,40328,Tumor tissue
+1,29507,40373,Tumor tissue
+1,29553,40430,Tumor tissue
+1,29587,40475,Tumor tissue
+1,29621,40498,Tumor tissue
+1,29655,40543,Tumor tissue
+1,29677,40600,Tumor tissue
+1,29734,40657,Tumor tissue
+1,29791,40702,Tumor tissue
+1,29825,40736,Tumor tissue
+1,29870,40782,Tumor tissue
+1,29904,40827,Tumor tissue
+1,29927,40850,Tumor tissue
+1,29972,40884,Tumor tissue
+1,30029,40952,Tumor tissue
+1,30086,41020,Tumor tissue
+1,30154,41088,Tumor tissue
+1,30233,41156,Tumor tissue
+1,30313,41247,Tumor tissue
+1,30370,41338,Tumor tissue
+1,30426,41394,Tumor tissue
+1,30494,41462,Tumor tissue
+1,30563,41519,Tumor tissue
+1,30608,41553,Tumor tissue
+1,30642,41599,Tumor tissue
+1,30687,41633,Tumor tissue
+1,30721,41655,Tumor tissue
+1,30767,41701,Tumor tissue
+1,30835,41746,Tumor tissue
+1,30892,41780,Tumor tissue
+1,30937,41837,Tumor tissue
+1,31005,41905,Tumor tissue
+1,31096,41962,Tumor tissue
+1,31164,42018,Tumor tissue
+1,31232,42075,Tumor tissue
+1,31300,42121,Tumor tissue
+1,31357,42177,Tumor tissue
+1,31414,42223,Tumor tissue
+1,31459,42245,Tumor tissue
+1,31493,42279,Tumor tissue
+1,31527,42313,Tumor tissue
+1,31561,42359,Tumor tissue
+1,31607,42427,Tumor tissue
+1,31686,42506,Tumor tissue
+1,31754,42574,Tumor tissue
+1,31788,42620,Tumor tissue
+1,31811,42654,Tumor tissue
+1,31834,42676,Tumor tissue
+1,31868,42722,Tumor tissue
+1,31902,42767,Tumor tissue
+1,31924,42779,Tumor tissue
+1,31947,42790,Tumor tissue
+1,31958,42813,Tumor tissue
+1,31958,42835,Tumor tissue
+1,31970,42847,Tumor tissue
+1,31993,42847,Tumor tissue
+1,32015,42847,Tumor tissue
+1,32049,42869,Tumor tissue
+1,32140,42937,Tumor tissue
+1,32265,43028,Tumor tissue
+1,32390,43108,Tumor tissue
+1,32503,43187,Tumor tissue
+1,32605,43278,Tumor tissue
+1,32708,43357,Tumor tissue
+1,32810,43425,Tumor tissue
+1,32900,43471,Tumor tissue
+1,32980,43539,Tumor tissue
+1,33059,43607,Tumor tissue
+1,33105,43641,Tumor tissue
+1,33139,43675,Tumor tissue
+1,33173,43686,Tumor tissue
+1,33196,43709,Tumor tissue
+1,33218,43743,Tumor tissue
+1,33241,43754,Tumor tissue
+1,33275,43766,Tumor tissue
+1,33309,43788,Tumor tissue
+1,33332,43822,Tumor tissue
+1,33354,43857,Tumor tissue
+1,33388,43879,Tumor tissue
+1,33423,43902,Tumor tissue
+1,33445,43913,Tumor tissue
+1,33468,43925,Tumor tissue
+1,33479,43947,Tumor tissue
+1,33491,43970,Tumor tissue
+1,33525,43993,Tumor tissue
+1,33570,44015,Tumor tissue
+1,33604,44049,Tumor tissue
+1,33638,44083,Tumor tissue
+1,33684,44117,Tumor tissue
+1,33718,44152,Tumor tissue
+1,33752,44174,Tumor tissue
+1,33797,44197,Tumor tissue
+1,33831,44220,Tumor tissue
+1,33865,44242,Tumor tissue
+1,33899,44254,Tumor tissue
+1,33922,44265,Tumor tissue
+1,33945,44288,Tumor tissue
+1,33967,44310,Tumor tissue
+1,33990,44333,Tumor tissue
+1,34013,44344,Tumor tissue
+1,34047,44344,Tumor tissue
+1,34069,44356,Tumor tissue
+1,34081,44367,Tumor tissue
+1,34103,44367,Tumor tissue
+1,34126,44367,Tumor tissue
+1,34149,44378,Tumor tissue
+1,34172,44401,Tumor tissue
+1,34194,44424,Tumor tissue
+1,34228,44447,Tumor tissue
+1,34274,44458,Tumor tissue
+1,34319,44469,Tumor tissue
+1,34353,44481,Tumor tissue
+1,34387,44492,Tumor tissue
+1,34421,44515,Tumor tissue
+1,34444,44526,Tumor tissue
+1,34478,44537,Tumor tissue
+1,34512,44549,Tumor tissue
+1,34546,44549,Tumor tissue
+1,34580,44549,Tumor tissue
+1,34603,44549,Tumor tissue
+1,34625,44549,Tumor tissue
+1,34648,44549,Tumor tissue
+1,34660,44560,Tumor tissue
+1,34671,44571,Tumor tissue
+1,34694,44571,Tumor tissue
+1,34705,44583,Tumor tissue
+1,34716,44594,Tumor tissue
+1,34739,44594,Tumor tissue
+1,34762,44594,Tumor tissue
+1,34784,44594,Tumor tissue
+1,34807,44594,Tumor tissue
+1,34830,44594,Tumor tissue
+1,34852,44594,Tumor tissue
+1,34887,44594,Tumor tissue
+1,34909,44594,Tumor tissue
+2,43930,25534,Necrosis
+2,43930,25526,Necrosis
+2,43930,25487,Necrosis
+2,43930,25424,Necrosis
+2,43930,25353,Necrosis
+2,43930,25274,Necrosis
+2,43922,25195,Necrosis
+2,43914,25124,Necrosis
+2,43906,25069,Necrosis
+2,43898,25022,Necrosis
+2,43890,24974,Necrosis
+2,43882,24935,Necrosis
+2,43882,24896,Necrosis
+2,43882,24856,Necrosis
+2,43882,24817,Necrosis
+2,43882,24777,Necrosis
+2,43882,24754,Necrosis
+2,43882,24722,Necrosis
+2,43882,24691,Necrosis
+2,43882,24667,Necrosis
+2,43882,24636,Necrosis
+2,43875,24604,Necrosis
+2,43867,24580,Necrosis
+2,43867,24557,Necrosis
+2,43867,24525,Necrosis
+2,43859,24502,Necrosis
+2,43843,24470,Necrosis
+2,43835,24439,Necrosis
+2,43827,24423,Necrosis
+2,43804,24407,Necrosis
+2,43780,24383,Necrosis
+2,43756,24360,Necrosis
+2,43717,24344,Necrosis
+2,43654,24313,Necrosis
+2,43607,24289,Necrosis
+2,43520,24281,Necrosis
+2,43410,24273,Necrosis
+2,43346,24273,Necrosis
+2,43299,24273,Necrosis
+2,43276,24273,Necrosis
+2,43252,24273,Necrosis
+2,43220,24273,Necrosis
+2,43181,24273,Necrosis
+2,43142,24281,Necrosis
+2,43094,24305,Necrosis
+2,43000,24344,Necrosis
+2,42889,24407,Necrosis
+2,42818,24462,Necrosis
+2,42755,24494,Necrosis
+2,42708,24517,Necrosis
+2,42684,24525,Necrosis
+2,42661,24533,Necrosis
+2,42645,24541,Necrosis
+2,42621,24541,Necrosis
+2,42590,24541,Necrosis
+2,42558,24541,Necrosis
+2,42527,24541,Necrosis
+2,42495,24541,Necrosis
+2,42456,24541,Necrosis
+2,42424,24533,Necrosis
+2,42377,24525,Necrosis
+2,42306,24525,Necrosis
+2,42227,24525,Necrosis
+2,42141,24525,Necrosis
+2,42062,24541,Necrosis
+2,41983,24573,Necrosis
+2,41920,24604,Necrosis
+2,41873,24628,Necrosis
+2,41833,24651,Necrosis
+2,41802,24683,Necrosis
+2,41778,24707,Necrosis
+2,41762,24730,Necrosis
+2,41747,24762,Necrosis
+2,41731,24793,Necrosis
+2,41723,24817,Necrosis
+2,41715,24833,Necrosis
+2,41707,24848,Necrosis
+2,41707,24872,Necrosis
+2,41707,24903,Necrosis
+2,41707,24935,Necrosis
+2,41707,24974,Necrosis
+2,41707,25014,Necrosis
+2,41707,25045,Necrosis
+2,41707,25069,Necrosis
+2,41707,25093,Necrosis
+2,41707,25124,Necrosis
+2,41707,25156,Necrosis
+2,41707,25195,Necrosis
+2,41707,25234,Necrosis
+2,41707,25274,Necrosis
+2,41707,25305,Necrosis
+2,41707,25329,Necrosis
+2,41707,25368,Necrosis
+2,41707,25400,Necrosis
+2,41707,25439,Necrosis
+2,41707,25494,Necrosis
+2,41707,25550,Necrosis
+2,41707,25605,Necrosis
+2,41707,25668,Necrosis
+2,41715,25739,Necrosis
+2,41731,25794,Necrosis
+2,41747,25841,Necrosis
+2,41762,25881,Necrosis
+2,41786,25928,Necrosis
+2,41810,25967,Necrosis
+2,41841,25999,Necrosis
+2,41881,26030,Necrosis
+2,41912,26046,Necrosis
+2,41936,26070,Necrosis
+2,41967,26093,Necrosis
+2,42007,26109,Necrosis
+2,42038,26133,Necrosis
+2,42062,26164,Necrosis
+2,42085,26180,Necrosis
+2,42109,26188,Necrosis
+2,42133,26227,Necrosis
+2,42164,26275,Necrosis
+2,42188,26314,Necrosis
+2,42204,26353,Necrosis
+2,42227,26393,Necrosis
+2,42251,26424,Necrosis
+2,42259,26440,Necrosis
+2,42259,26464,Necrosis
+2,42275,26487,Necrosis
+2,42298,26503,Necrosis
+2,42322,26519,Necrosis
+2,42361,26527,Necrosis
+2,42401,26527,Necrosis
+2,42440,26527,Necrosis
+2,42480,26527,Necrosis
+2,42519,26527,Necrosis
+2,42550,26519,Necrosis
+2,42558,26503,Necrosis
+2,42574,26487,Necrosis
+2,42621,26456,Necrosis
+2,42684,26424,Necrosis
+2,42748,26401,Necrosis
+2,42803,26369,Necrosis
+2,42858,26345,Necrosis
+2,42921,26330,Necrosis
+2,43000,26306,Necrosis
+2,43094,26275,Necrosis
+2,43173,26259,Necrosis
+2,43228,26251,Necrosis
+2,43276,26243,Necrosis
+2,43331,26227,Necrosis
+2,43402,26204,Necrosis
+2,43465,26196,Necrosis
+2,43504,26196,Necrosis
+2,43536,26196,Necrosis
+2,43575,26196,Necrosis
+2,43622,26196,Necrosis
+2,43677,26196,Necrosis
+2,43725,26196,Necrosis
+2,43748,26196,Necrosis
+2,43756,26188,Necrosis
+2,43772,26164,Necrosis
+2,43796,26133,Necrosis
+2,43811,26109,Necrosis
+2,43827,26085,Necrosis
+2,43835,26046,Necrosis
+2,43851,26022,Necrosis
+2,43867,26007,Necrosis
+2,43875,25975,Necrosis
+2,43882,25951,Necrosis
+2,43890,25936,Necrosis
+2,43906,25904,Necrosis
+2,43914,25873,Necrosis
+2,43914,25857,Necrosis
+2,43914,25833,Necrosis
+2,43914,25802,Necrosis
+2,43914,25770,Necrosis
+2,43914,25731,Necrosis
+2,43914,25699,Necrosis
+2,43914,25684,Necrosis
+2,43914,25660,Necrosis
+2,43914,25636,Necrosis
+2,43914,25621,Necrosis
+2,43914,25605,Necrosis
+2,43914,25581,Necrosis
+2,43914,25557,Necrosis
+2,43914,25542,Necrosis
+2,43914,25526,Necrosis
+2,43914,25502,Necrosis
+2,43914,25479,Necrosis
+2,43914,25463,Necrosis
+2,43914,25447,Necrosis
+2,43914,25416,Necrosis
+2,43914,25392,Necrosis
+3,40966,30167,Necrosis
+3,40951,30143,Necrosis
+3,40927,30112,Necrosis
+3,40911,30072,Necrosis
+3,40895,30025,Necrosis
+3,40888,29986,Necrosis
+3,40888,29946,Necrosis
+3,40888,29915,Necrosis
+3,40888,29891,Necrosis
+3,40888,29860,Necrosis
+3,40888,29820,Necrosis
+3,40888,29789,Necrosis
+3,40888,29757,Necrosis
+3,40888,29718,Necrosis
+3,40888,29671,Necrosis
+3,40895,29608,Necrosis
+3,40911,29529,Necrosis
+3,40927,29458,Necrosis
+3,40943,29387,Necrosis
+3,40951,29308,Necrosis
+3,40951,29253,Necrosis
+3,40951,29221,Necrosis
+3,40951,29198,Necrosis
+3,40951,29182,Necrosis
+3,40951,29166,Necrosis
+3,40951,29135,Necrosis
+3,40951,29103,Necrosis
+3,40951,29088,Necrosis
+3,40943,29072,Necrosis
+3,40935,29056,Necrosis
+3,40927,29040,Necrosis
+3,40911,29024,Necrosis
+3,40888,29009,Necrosis
+3,40856,29001,Necrosis
+3,40832,28993,Necrosis
+3,40817,28977,Necrosis
+3,40801,28969,Necrosis
+3,40785,28961,Necrosis
+3,40769,28946,Necrosis
+3,40746,28938,Necrosis
+3,40706,28930,Necrosis
+3,40667,28914,Necrosis
+3,40635,28898,Necrosis
+3,40612,28891,Necrosis
+3,40572,28883,Necrosis
+3,40525,28867,Necrosis
+3,40493,28859,Necrosis
+3,40454,28851,Necrosis
+3,40407,28835,Necrosis
+3,40375,28827,Necrosis
+3,40336,28820,Necrosis
+3,40289,28812,Necrosis
+3,40241,28812,Necrosis
+3,40170,28812,Necrosis
+3,40099,28812,Necrosis
+3,40021,28812,Necrosis
+3,39950,28820,Necrosis
+3,39910,28827,Necrosis
+3,39863,28835,Necrosis
+3,39792,28851,Necrosis
+3,39729,28867,Necrosis
+3,39690,28875,Necrosis
+3,39666,28883,Necrosis
+3,39642,28898,Necrosis
+3,39603,28914,Necrosis
+3,39556,28930,Necrosis
+3,39508,28954,Necrosis
+3,39445,28985,Necrosis
+3,39374,29009,Necrosis
+3,39319,29024,Necrosis
+3,39288,29048,Necrosis
+3,39256,29072,Necrosis
+3,39217,29088,Necrosis
+3,39193,29095,Necrosis
+3,39177,29095,Necrosis
+3,39154,29095,Necrosis
+3,39122,29103,Necrosis
+3,39106,29119,Necrosis
+3,39099,29127,Necrosis
+3,39083,29135,Necrosis
+3,39059,29166,Necrosis
+3,39035,29198,Necrosis
+3,39028,29221,Necrosis
+3,39028,29245,Necrosis
+3,39028,29269,Necrosis
+3,39028,29308,Necrosis
+3,39028,29340,Necrosis
+3,39028,29363,Necrosis
+3,39028,29395,Necrosis
+3,39028,29434,Necrosis
+3,39028,29474,Necrosis
+3,39028,29521,Necrosis
+3,39020,29584,Necrosis
+3,39012,29639,Necrosis
+3,39004,29694,Necrosis
+3,38988,29749,Necrosis
+3,38972,29797,Necrosis
+3,38957,29852,Necrosis
+3,38941,29907,Necrosis
+3,38925,29954,Necrosis
+3,38909,30002,Necrosis
+3,38878,30049,Necrosis
+3,38846,30096,Necrosis
+3,38831,30135,Necrosis
+3,38807,30175,Necrosis
+3,38791,30222,Necrosis
+3,38791,30254,Necrosis
+3,38791,30269,Necrosis
+3,38791,30301,Necrosis
+3,38791,30340,Necrosis
+3,38791,30380,Necrosis
+3,38791,30419,Necrosis
+3,38791,30451,Necrosis
+3,38791,30474,Necrosis
+3,38791,30498,Necrosis
+3,38807,30545,Necrosis
+3,38831,30593,Necrosis
+3,38846,30616,Necrosis
+3,38862,30648,Necrosis
+3,38878,30671,Necrosis
+3,38894,30687,Necrosis
+3,38909,30711,Necrosis
+3,38925,30734,Necrosis
+3,38941,30774,Necrosis
+3,38957,30813,Necrosis
+3,38980,30845,Necrosis
+3,39012,30892,Necrosis
+3,39043,30979,Necrosis
+3,39075,31050,Necrosis
+3,39099,31089,Necrosis
+3,39114,31128,Necrosis
+3,39138,31168,Necrosis
+3,39162,31207,Necrosis
+3,39177,31247,Necrosis
+3,39201,31286,Necrosis
+3,39225,31302,Necrosis
+3,39240,31310,Necrosis
+3,39248,31325,Necrosis
+3,39256,31341,Necrosis
+3,39280,31357,Necrosis
+3,39311,31373,Necrosis
+3,39335,31380,Necrosis
+3,39359,31380,Necrosis
+3,39382,31380,Necrosis
+3,39398,31380,Necrosis
+3,39414,31380,Necrosis
+3,39430,31380,Necrosis
+3,39445,31380,Necrosis
+3,39477,31380,Necrosis
+3,39508,31365,Necrosis
+3,39556,31333,Necrosis
+3,39611,31310,Necrosis
+3,39642,31278,Necrosis
+3,39674,31247,Necrosis
+3,39705,31231,Necrosis
+3,39737,31215,Necrosis
+3,39784,31183,Necrosis
+3,39855,31152,Necrosis
+3,39934,31128,Necrosis
+3,39989,31089,Necrosis
+3,40029,31057,Necrosis
+3,40084,31034,Necrosis
+3,40162,31002,Necrosis
+3,40233,30979,Necrosis
+3,40296,30955,Necrosis
+3,40344,30931,Necrosis
+3,40360,30923,Necrosis
+3,40375,30923,Necrosis
+3,40399,30916,Necrosis
+3,40430,30908,Necrosis
+3,40470,30908,Necrosis
+3,40501,30908,Necrosis
+3,40517,30908,Necrosis
+3,40533,30908,Necrosis
+3,40557,30908,Necrosis
+3,40580,30908,Necrosis
+3,40596,30908,Necrosis
+3,40620,30908,Necrosis
+3,40643,30908,Necrosis
+3,40659,30908,Necrosis
+3,40683,30916,Necrosis
+3,40769,30931,Necrosis
+3,40872,30947,Necrosis
+3,40927,30963,Necrosis
+3,40966,30971,Necrosis
+3,40990,30971,Necrosis
+3,41014,30971,Necrosis
+3,41029,30963,Necrosis
+3,41029,30947,Necrosis
+3,41029,30931,Necrosis
+3,41029,30916,Necrosis
+3,41037,30884,Necrosis
+3,41045,30853,Necrosis
+3,41045,30837,Necrosis
+3,41045,30813,Necrosis
+3,41045,30782,Necrosis
+3,41045,30758,Necrosis
+3,41045,30742,Necrosis
+3,41045,30719,Necrosis
+3,41045,30695,Necrosis
+3,41045,30679,Necrosis
+3,41045,30656,Necrosis
+3,41045,30624,Necrosis
+3,41037,30593,Necrosis
+3,41029,30553,Necrosis
+3,41029,30514,Necrosis
+3,41022,30482,Necrosis
+3,41014,30459,Necrosis
+3,41014,30443,Necrosis
+3,41006,30435,Necrosis
+3,40998,30427,Necrosis
+3,40998,30411,Necrosis
+3,40998,30396,Necrosis
+3,40998,30380,Necrosis
+3,40998,30364,Necrosis
+3,40998,30348,Necrosis
+3,40998,30332,Necrosis
+3,40998,30317,Necrosis
+3,40990,30309,Necrosis
+3,40982,30293,Necrosis
+3,40982,30269,Necrosis
+3,40982,30254,Necrosis
+3,40982,30238,Necrosis
+3,40974,30222,Necrosis
+3,40966,30206,Necrosis
+3,40966,30191,Necrosis
+3,40958,30175,Necrosis
+3,40951,30151,Necrosis
+3,40943,30128,Necrosis
+3,40935,30104,Necrosis
+3,40935,30088,Necrosis
+4,35781,35100,Necrosis
+4,35781,35115,Necrosis
+4,35788,35147,Necrosis
+4,35804,35163,Necrosis
+4,35828,35163,Necrosis
+4,35851,35171,Necrosis
+4,35867,35194,Necrosis
+4,35875,35218,Necrosis
+4,35883,35226,Necrosis
+4,35899,35234,Necrosis
+4,35922,35241,Necrosis
+4,35946,35249,Necrosis
+4,35962,35265,Necrosis
+4,35978,35273,Necrosis
+4,35993,35289,Necrosis
+4,36009,35312,Necrosis
+4,36025,35320,Necrosis
+4,36041,35320,Necrosis
+4,36064,35336,Necrosis
+4,36088,35367,Necrosis
+4,36104,35391,Necrosis
+4,36119,35407,Necrosis
+4,36151,35438,Necrosis
+4,36182,35470,Necrosis
+4,36214,35494,Necrosis
+4,36253,35533,Necrosis
+4,36277,35557,Necrosis
+4,36293,35564,Necrosis
+4,36301,35580,Necrosis
+4,36316,35588,Necrosis
+4,36340,35612,Necrosis
+4,36380,35643,Necrosis
+4,36419,35667,Necrosis
+4,36435,35691,Necrosis
+4,36458,35698,Necrosis
+4,36490,35706,Necrosis
+4,36514,35714,Necrosis
+4,36529,35714,Necrosis
+4,36561,35714,Necrosis
+4,36600,35714,Necrosis
+4,36632,35714,Necrosis
+4,36655,35722,Necrosis
+4,36679,35738,Necrosis
+4,36703,35746,Necrosis
+4,36726,35746,Necrosis
+4,36750,35754,Necrosis
+4,36781,35769,Necrosis
+4,36813,35777,Necrosis
+4,36837,35777,Necrosis
+4,36868,35777,Necrosis
+4,36892,35777,Necrosis
+4,36923,35777,Necrosis
+4,36971,35777,Necrosis
+4,37018,35777,Necrosis
+4,37049,35777,Necrosis
+4,37073,35777,Necrosis
+4,37097,35769,Necrosis
+4,37120,35761,Necrosis
+4,37136,35754,Necrosis
+4,37144,35738,Necrosis
+4,37176,35722,Necrosis
+4,37207,35698,Necrosis
+4,37215,35667,Necrosis
+4,37215,35643,Necrosis
+4,37223,35612,Necrosis
+4,37239,35564,Necrosis
+4,37246,35525,Necrosis
+4,37246,35494,Necrosis
+4,37246,35470,Necrosis
+4,37246,35446,Necrosis
+4,37246,35415,Necrosis
+4,37246,35383,Necrosis
+4,37239,35344,Necrosis
+4,37223,35289,Necrosis
+4,37215,35234,Necrosis
+4,37199,35178,Necrosis
+4,37176,35115,Necrosis
+4,37168,35060,Necrosis
+4,37168,35021,Necrosis
+4,37160,34989,Necrosis
+4,37152,34958,Necrosis
+4,37144,34934,Necrosis
+4,37136,34918,Necrosis
+4,37128,34895,Necrosis
+4,37120,34871,Necrosis
+4,37105,34855,Necrosis
+4,37089,34840,Necrosis
+4,37073,34824,Necrosis
+4,37049,34800,Necrosis
+4,37034,34777,Necrosis
+4,37018,34761,Necrosis
+4,37002,34753,Necrosis
+4,36986,34753,Necrosis
+4,36971,34745,Necrosis
+4,36955,34737,Necrosis
+4,36939,34737,Necrosis
+4,36915,34737,Necrosis
+4,36884,34737,Necrosis
+4,36852,34745,Necrosis
+4,36829,34761,Necrosis
+4,36805,34769,Necrosis
+4,36774,34784,Necrosis
+4,36750,34808,Necrosis
+4,36726,34832,Necrosis
+4,36703,34855,Necrosis
+4,36679,34879,Necrosis
+4,36663,34903,Necrosis
+4,36655,34918,Necrosis
+4,36647,34934,Necrosis
+4,36640,34942,Necrosis
+4,36632,34950,Necrosis
+4,36624,34966,Necrosis
+4,36608,34981,Necrosis
+4,36592,34989,Necrosis
+4,36584,34997,Necrosis
+4,36577,35005,Necrosis
+4,36537,35005,Necrosis
+4,36482,35005,Necrosis
+4,36450,35005,Necrosis
+4,36427,35005,Necrosis
+4,36403,35005,Necrosis
+4,36387,35005,Necrosis
+4,36372,35005,Necrosis
+4,36356,34989,Necrosis
+4,36340,34958,Necrosis
+4,36316,34934,Necrosis
+4,36293,34926,Necrosis
+4,36277,34918,Necrosis
+4,36261,34895,Necrosis
+4,36214,34863,Necrosis
+4,36159,34832,Necrosis
+4,36127,34808,Necrosis
+4,36104,34784,Necrosis
+4,36080,34769,Necrosis
+4,36056,34769,Necrosis
+4,36041,34769,Necrosis
+4,36033,34761,Necrosis
+4,36033,34745,Necrosis
+4,36033,34721,Necrosis
+4,36025,34698,Necrosis
+4,36009,34674,Necrosis
+4,36001,34643,Necrosis
+4,36001,34619,Necrosis
+4,35993,34603,Necrosis
+4,35985,34580,Necrosis
+4,35985,34548,Necrosis
+4,35985,34524,Necrosis
+4,35985,34501,Necrosis
+4,35985,34469,Necrosis
+4,35985,34446,Necrosis
+4,35985,34422,Necrosis
+4,35985,34398,Necrosis
+4,35985,34383,Necrosis
+4,35978,34375,Necrosis
+4,35962,34375,Necrosis
+4,35946,34375,Necrosis
+4,35922,34383,Necrosis
+4,35899,34398,Necrosis
+4,35883,34406,Necrosis
+4,35875,34422,Necrosis
+4,35867,34446,Necrosis
+4,35859,34469,Necrosis
+4,35851,34493,Necrosis
+4,35836,34517,Necrosis
+4,35820,34540,Necrosis
+4,35812,34556,Necrosis
+4,35804,34572,Necrosis
+4,35796,34587,Necrosis
+4,35796,34603,Necrosis
+4,35796,34619,Necrosis
+4,35796,34635,Necrosis
+4,35796,34650,Necrosis
+4,35788,34666,Necrosis
+4,35773,34682,Necrosis
+4,35765,34698,Necrosis
+4,35757,34706,Necrosis
+4,35749,34721,Necrosis
+4,35741,34753,Necrosis
+4,35725,34784,Necrosis
+4,35718,34816,Necrosis
+4,35710,34840,Necrosis
+4,35702,34863,Necrosis
+4,35694,34887,Necrosis
+4,35678,34910,Necrosis
+4,35670,34934,Necrosis
+4,35670,34950,Necrosis
+4,35670,34966,Necrosis
+4,35670,34981,Necrosis
+4,35670,34997,Necrosis
+4,35678,35013,Necrosis
+4,35686,35029,Necrosis
+4,35694,35037,Necrosis
+4,35710,35044,Necrosis
+4,35725,35052,Necrosis
+4,35741,35052,Necrosis
+4,35749,35060,Necrosis
+4,35757,35068,Necrosis
+4,35765,35076,Necrosis
+4,35773,35100,Necrosis
+4,35781,35115,Necrosis
+5,40052,36770,Necrosis
+5,40036,36754,Necrosis
+5,39997,36731,Necrosis
+5,39950,36707,Necrosis
+5,39910,36683,Necrosis
+5,39879,36675,Necrosis
+5,39863,36668,Necrosis
+5,39855,36660,Necrosis
+5,39839,36660,Necrosis
+5,39824,36652,Necrosis
+5,39792,36636,Necrosis
+5,39737,36620,Necrosis
+5,39690,36605,Necrosis
+5,39650,36589,Necrosis
+5,39603,36581,Necrosis
+5,39564,36581,Necrosis
+5,39532,36581,Necrosis
+5,39485,36581,Necrosis
+5,39430,36581,Necrosis
+5,39390,36581,Necrosis
+5,39359,36581,Necrosis
+5,39327,36589,Necrosis
+5,39303,36605,Necrosis
+5,39288,36620,Necrosis
+5,39272,36636,Necrosis
+5,39256,36644,Necrosis
+5,39240,36652,Necrosis
+5,39225,36660,Necrosis
+5,39209,36668,Necrosis
+5,39193,36683,Necrosis
+5,39177,36699,Necrosis
+5,39162,36707,Necrosis
+5,39138,36723,Necrosis
+5,39114,36739,Necrosis
+5,39099,36746,Necrosis
+5,39083,36762,Necrosis
+5,39067,36778,Necrosis
+5,39059,36794,Necrosis
+5,39059,36809,Necrosis
+5,39059,36833,Necrosis
+5,39059,36857,Necrosis
+5,39059,36872,Necrosis
+5,39059,36888,Necrosis
+5,39059,36912,Necrosis
+5,39067,36936,Necrosis
+5,39083,36959,Necrosis
+5,39099,36975,Necrosis
+5,39106,36991,Necrosis
+5,39122,37022,Necrosis
+5,39162,37046,Necrosis
+5,39193,37062,Necrosis
+5,39217,37077,Necrosis
+5,39248,37093,Necrosis
+5,39280,37101,Necrosis
+5,39311,37109,Necrosis
+5,39335,37125,Necrosis
+5,39382,37140,Necrosis
+5,39461,37164,Necrosis
+5,39524,37188,Necrosis
+5,39564,37203,Necrosis
+5,39579,37219,Necrosis
+5,39595,37227,Necrosis
+5,39634,37243,Necrosis
+5,39674,37274,Necrosis
+5,39705,37314,Necrosis
+5,39737,37353,Necrosis
+5,39776,37377,Necrosis
+5,39816,37400,Necrosis
+5,39855,37432,Necrosis
+5,39902,37463,Necrosis
+5,39958,37503,Necrosis
+5,40021,37550,Necrosis
+5,40076,37590,Necrosis
+5,40115,37613,Necrosis
+5,40139,37629,Necrosis
+5,40170,37660,Necrosis
+5,40210,37700,Necrosis
+5,40257,37739,Necrosis
+5,40320,37779,Necrosis
+5,40360,37810,Necrosis
+5,40391,37834,Necrosis
+5,40430,37850,Necrosis
+5,40462,37881,Necrosis
+5,40493,37913,Necrosis
+5,40533,37952,Necrosis
+5,40572,37991,Necrosis
+5,40596,37999,Necrosis
+5,40612,38007,Necrosis
+5,40627,38023,Necrosis
+5,40643,38031,Necrosis
+5,40667,38031,Necrosis
+5,40683,38039,Necrosis
+5,40706,38047,Necrosis
+5,40738,38047,Necrosis
+5,40754,38047,Necrosis
+5,40761,38039,Necrosis
+5,40761,38023,Necrosis
+5,40769,38007,Necrosis
+5,40777,37983,Necrosis
+5,40785,37952,Necrosis
+5,40793,37928,Necrosis
+5,40801,37913,Necrosis
+5,40817,37881,Necrosis
+5,40832,37850,Necrosis
+5,40840,37810,Necrosis
+5,40856,37771,Necrosis
+5,40880,37755,Necrosis
+5,40895,37731,Necrosis
+5,40911,37716,Necrosis
+5,40919,37708,Necrosis
+5,40927,37692,Necrosis
+5,40951,37676,Necrosis
+5,40998,37653,Necrosis
+5,41069,37621,Necrosis
+5,41140,37582,Necrosis
+5,41211,37542,Necrosis
+5,41274,37526,Necrosis
+5,41313,37519,Necrosis
+5,41337,37503,Necrosis
+5,41368,37495,Necrosis
+5,41416,37487,Necrosis
+5,41463,37479,Necrosis
+5,41502,37479,Necrosis
+5,41550,37479,Necrosis
+5,41605,37479,Necrosis
+5,41644,37479,Necrosis
+5,41668,37479,Necrosis
+5,41684,37479,Necrosis
+5,41699,37487,Necrosis
+5,41715,37495,Necrosis
+5,41731,37503,Necrosis
+5,41747,37519,Necrosis
+5,41762,37534,Necrosis
+5,41770,37550,Necrosis
+5,41778,37566,Necrosis
+5,41786,37582,Necrosis
+5,41794,37590,Necrosis
+5,41810,37590,Necrosis
+5,41825,37590,Necrosis
+5,41841,37590,Necrosis
+5,41873,37574,Necrosis
+5,41920,37542,Necrosis
+5,41959,37526,Necrosis
+5,41991,37511,Necrosis
+5,42022,37487,Necrosis
+5,42070,37463,Necrosis
+5,42133,37448,Necrosis
+5,42188,37432,Necrosis
+5,42235,37408,Necrosis
+5,42275,37393,Necrosis
+5,42298,37385,Necrosis
+5,42314,37377,Necrosis
+5,42330,37369,Necrosis
+5,42346,37369,Necrosis
+5,42361,37369,Necrosis
+5,42377,37369,Necrosis
+5,42393,37361,Necrosis
+5,42432,37345,Necrosis
+5,42487,37329,Necrosis
+5,42558,37314,Necrosis
+5,42645,37306,Necrosis
+5,42716,37298,Necrosis
+5,42787,37290,Necrosis
+5,42858,37282,Necrosis
+5,42921,37266,Necrosis
+5,42960,37259,Necrosis
+5,42984,37251,Necrosis
+5,43015,37243,Necrosis
+5,43039,37243,Necrosis
+5,43047,37235,Necrosis
+5,43055,37227,Necrosis
+5,43086,37227,Necrosis
+5,43118,37227,Necrosis
+5,43142,37227,Necrosis
+5,43173,37235,Necrosis
+5,43205,37259,Necrosis
+5,43236,37290,Necrosis
+5,43283,37337,Necrosis
+5,43323,37385,Necrosis
+5,43339,37416,Necrosis
+5,43354,37448,Necrosis
+5,43362,37479,Necrosis
+5,43362,37519,Necrosis
+5,43370,37574,Necrosis
+5,43378,37645,Necrosis
+5,43378,37708,Necrosis
+5,43378,37755,Necrosis
+5,43378,37810,Necrosis
+5,43378,37857,Necrosis
+5,43378,37897,Necrosis
+5,43378,37944,Necrosis
+5,43370,37983,Necrosis
+5,43362,38015,Necrosis
+5,43362,38054,Necrosis
+5,43354,38102,Necrosis
+5,43323,38149,Necrosis
+5,43291,38180,Necrosis
+5,43283,38204,Necrosis
+5,43276,38228,Necrosis
+5,43260,38244,Necrosis
+5,43244,38251,Necrosis
+5,43220,38267,Necrosis
+5,43197,38299,Necrosis
+5,43181,38314,Necrosis
+5,43165,38322,Necrosis
+5,43149,38338,Necrosis
+5,43134,38370,Necrosis
+5,43118,38401,Necrosis
+5,43102,38417,Necrosis
+5,43086,38448,Necrosis
+5,43071,38480,Necrosis
+5,43063,38504,Necrosis
+5,43055,38527,Necrosis
+5,43047,38559,Necrosis
+5,43047,38606,Necrosis
+5,43047,38661,Necrosis
+5,43047,38701,Necrosis
+5,43047,38740,Necrosis
+5,43047,38779,Necrosis
+5,43047,38795,Necrosis
+5,43055,38811,Necrosis
+5,43071,38834,Necrosis
+5,43094,38866,Necrosis
+5,43118,38898,Necrosis
+5,43149,38929,Necrosis
+5,43189,38976,Necrosis
+5,43220,39031,Necrosis
+5,43252,39087,Necrosis
+5,43276,39150,Necrosis
+5,43307,39228,Necrosis
+5,43346,39315,Necrosis
+5,43362,39394,Necrosis
+5,43378,39465,Necrosis
+5,43394,39536,Necrosis
+5,43402,39599,Necrosis
+5,43410,39646,Necrosis
+5,43417,39693,Necrosis
+5,43433,39733,Necrosis
+5,43441,39780,Necrosis
+5,43457,39819,Necrosis
+5,43488,39843,Necrosis
+5,43520,39875,Necrosis
+5,43551,39890,Necrosis
+5,43583,39898,Necrosis
+5,43630,39922,Necrosis
+5,43693,39945,Necrosis
+5,43756,39961,Necrosis
+5,43827,39977,Necrosis
+5,43882,39993,Necrosis
+5,43914,40001,Necrosis
+5,43945,40009,Necrosis
+5,43969,40016,Necrosis
+5,43993,40024,Necrosis
+5,44040,40040,Necrosis
+5,44095,40048,Necrosis
+5,44158,40048,Necrosis
+5,44245,40048,Necrosis
+5,44324,40048,Necrosis
+5,44387,40048,Necrosis
+5,44442,40048,Necrosis
+5,44489,40048,Necrosis
+5,44529,40048,Necrosis
+5,44568,40048,Necrosis
+5,44607,40040,Necrosis
+5,44671,40016,Necrosis
+5,44749,39985,Necrosis
+5,44828,39945,Necrosis
+5,44907,39914,Necrosis
+5,44954,39898,Necrosis
+5,44978,39890,Necrosis
+5,44986,39882,Necrosis
+5,44994,39851,Necrosis
+5,45009,39804,Necrosis
+5,45033,39756,Necrosis
+5,45072,39693,Necrosis
+5,45104,39615,Necrosis
+5,45128,39512,Necrosis
+5,45143,39402,Necrosis
+5,45143,39307,Necrosis
+5,45143,39244,Necrosis
+5,45143,39205,Necrosis
+5,45143,39173,Necrosis
+5,45143,39158,Necrosis
+5,45143,39142,Necrosis
+5,45128,39126,Necrosis
+5,45104,39110,Necrosis
+5,45088,39087,Necrosis
+5,45057,39047,Necrosis
+5,45002,39000,Necrosis
+5,44946,38961,Necrosis
+5,44875,38921,Necrosis
+5,44757,38866,Necrosis
+5,44615,38819,Necrosis
+5,44489,38787,Necrosis
+5,44395,38756,Necrosis
+5,44316,38724,Necrosis
+5,44253,38701,Necrosis
+5,44206,38677,Necrosis
+5,44158,38645,Necrosis
+5,44103,38606,Necrosis
+5,44064,38574,Necrosis
+5,44040,38559,Necrosis
+5,44024,38535,Necrosis
+5,44016,38511,Necrosis
+5,44001,38488,Necrosis
+5,43993,38456,Necrosis
+5,43985,38425,Necrosis
+5,43977,38401,Necrosis
+5,43977,38377,Necrosis
+5,43977,38346,Necrosis
+5,43977,38322,Necrosis
+5,43977,38291,Necrosis
+5,43977,38251,Necrosis
+5,43977,38212,Necrosis
+5,43985,38165,Necrosis
+5,44009,38110,Necrosis
+5,44040,38039,Necrosis
+5,44064,37976,Necrosis
+5,44087,37928,Necrosis
+5,44111,37889,Necrosis
+5,44135,37865,Necrosis
+5,44150,37850,Necrosis
+5,44158,37834,Necrosis
+5,44182,37818,Necrosis
+5,44206,37802,Necrosis
+5,44229,37787,Necrosis
+5,44269,37771,Necrosis
+5,44324,37731,Necrosis
+5,44403,37684,Necrosis
+5,44473,37645,Necrosis
+5,44521,37613,Necrosis
+5,44552,37597,Necrosis
+5,44568,37574,Necrosis
+5,44592,37550,Necrosis
+5,44631,37534,Necrosis
+5,44671,37526,Necrosis
+5,44694,37519,Necrosis
+5,44710,37503,Necrosis
+5,44726,37487,Necrosis
+5,44749,37471,Necrosis
+5,44781,37456,Necrosis
+5,44805,37448,Necrosis
+5,44820,37440,Necrosis
+5,44844,37416,Necrosis
+5,44875,37385,Necrosis
+5,44907,37353,Necrosis
+5,44931,37322,Necrosis
+5,44938,37298,Necrosis
+5,44946,37282,Necrosis
+5,44962,37259,Necrosis
+5,44978,37235,Necrosis
+5,44994,37219,Necrosis
+5,45002,37188,Necrosis
+5,45002,37156,Necrosis
+5,45009,37133,Necrosis
+5,45017,37085,Necrosis
+5,45017,37046,Necrosis
+5,45025,37006,Necrosis
+5,45049,36920,Necrosis
+5,45072,36841,Necrosis
+5,45088,36786,Necrosis
+5,45096,36746,Necrosis
+5,45096,36723,Necrosis
+5,45104,36683,Necrosis
+5,45112,36652,Necrosis
+5,45120,36628,Necrosis
+5,45128,36605,Necrosis
+5,45128,36589,Necrosis
+5,45128,36565,Necrosis
+5,45136,36526,Necrosis
+5,45143,36486,Necrosis
+5,45143,36455,Necrosis
+5,45143,36415,Necrosis
+5,45136,36352,Necrosis
+5,45128,36282,Necrosis
+5,45112,36218,Necrosis
+5,45096,36155,Necrosis
+5,45088,36116,Necrosis
+5,45072,36092,Necrosis
+5,45057,36061,Necrosis
+5,45049,36037,Necrosis
+5,45041,36029,Necrosis
+5,45025,36029,Necrosis
+5,45002,36021,Necrosis
+5,44978,36006,Necrosis
+5,44954,35990,Necrosis
+5,44931,35974,Necrosis
+5,44923,35958,Necrosis
+5,44923,35943,Necrosis
+5,44915,35927,Necrosis
+5,44907,35911,Necrosis
+5,44899,35888,Necrosis
+5,44883,35864,Necrosis
+5,44868,35825,Necrosis
+5,44860,35769,Necrosis
+5,44860,35714,Necrosis
+5,44852,35651,Necrosis
+5,44836,35588,Necrosis
+5,44820,35533,Necrosis
+5,44805,35494,Necrosis
+5,44797,35454,Necrosis
+5,44789,35415,Necrosis
+5,44781,35383,Necrosis
+5,44781,35344,Necrosis
+5,44781,35297,Necrosis
+5,44781,35249,Necrosis
+5,44781,35194,Necrosis
+5,44781,35115,Necrosis
+5,44781,35021,Necrosis
+5,44781,34926,Necrosis
+5,44797,34847,Necrosis
+5,44836,34769,Necrosis
+5,44868,34690,Necrosis
+5,44883,34619,Necrosis
+5,44899,34556,Necrosis
+5,44915,34501,Necrosis
+5,44931,34453,Necrosis
+5,44938,34414,Necrosis
+5,44938,34383,Necrosis
+5,44938,34343,Necrosis
+5,44938,34288,Necrosis
+5,44938,34241,Necrosis
+5,44938,34178,Necrosis
+5,44938,34115,Necrosis
+5,44938,34067,Necrosis
+5,44938,34020,Necrosis
+5,44938,33957,Necrosis
+5,44923,33878,Necrosis
+5,44883,33807,Necrosis
+5,44844,33752,Necrosis
+5,44820,33705,Necrosis
+5,44805,33666,Necrosis
+5,44789,33634,Necrosis
+5,44765,33602,Necrosis
+5,44726,33563,Necrosis
+5,44694,33524,Necrosis
+5,44655,33484,Necrosis
+5,44600,33445,Necrosis
+5,44544,33405,Necrosis
+5,44489,33366,Necrosis
+5,44442,33350,Necrosis
+5,44395,33335,Necrosis
+5,44340,33311,Necrosis
+5,44292,33303,Necrosis
+5,44253,33295,Necrosis
+5,44213,33279,Necrosis
+5,44174,33272,Necrosis
+5,44142,33272,Necrosis
+5,44119,33272,Necrosis
+5,44087,33272,Necrosis
+5,44040,33272,Necrosis
+5,43985,33287,Necrosis
+5,43930,33327,Necrosis
+5,43867,33366,Necrosis
+5,43811,33398,Necrosis
+5,43772,33413,Necrosis
+5,43741,33421,Necrosis
+5,43701,33429,Necrosis
+5,43662,33437,Necrosis
+5,43630,33445,Necrosis
+5,43591,33445,Necrosis
+5,43528,33445,Necrosis
+5,43465,33437,Necrosis
+5,43417,33429,Necrosis
+5,43370,33413,Necrosis
+5,43315,33374,Necrosis
+5,43276,33342,Necrosis
+5,43236,33311,Necrosis
+5,43189,33279,Necrosis
+5,43142,33248,Necrosis
+5,43079,33201,Necrosis
+5,43031,33161,Necrosis
+5,42984,33130,Necrosis
+5,42913,33090,Necrosis
+5,42842,33059,Necrosis
+5,42795,33043,Necrosis
+5,42763,33035,Necrosis
+5,42740,33035,Necrosis
+5,42716,33035,Necrosis
+5,42669,33035,Necrosis
+5,42606,33059,Necrosis
+5,42550,33098,Necrosis
+5,42503,33122,Necrosis
+5,42456,33138,Necrosis
+5,42424,33153,Necrosis
+5,42409,33177,Necrosis
+5,42385,33209,Necrosis
+5,42353,33232,Necrosis
+5,42322,33256,Necrosis
+5,42298,33287,Necrosis
+5,42283,33327,Necrosis
+5,42267,33350,Necrosis
+5,42251,33366,Necrosis
+5,42235,33390,Necrosis
+5,42227,33405,Necrosis
+5,42212,33421,Necrosis
+5,42188,33437,Necrosis
+5,42180,33453,Necrosis
+5,42172,33469,Necrosis
+5,42156,33484,Necrosis
+5,42141,33500,Necrosis
+5,42125,33508,Necrosis
+5,42109,33508,Necrosis
+5,42101,33516,Necrosis
+5,42085,33539,Necrosis
+5,42054,33571,Necrosis
+5,42030,33595,Necrosis
+5,42015,33634,Necrosis
+5,41991,33697,Necrosis
+5,41959,33752,Necrosis
+5,41928,33799,Necrosis
+5,41904,33855,Necrosis
+5,41888,33894,Necrosis
+5,41873,33910,Necrosis
+5,41865,33926,Necrosis
+5,41849,33949,Necrosis
+5,41825,33973,Necrosis
+5,41802,33989,Necrosis
+5,41747,34028,Necrosis
+5,41676,34067,Necrosis
+5,41597,34099,Necrosis
+5,41510,34138,Necrosis
+5,41423,34178,Necrosis
+5,41337,34209,Necrosis
+5,41266,34225,Necrosis
+5,41219,34249,Necrosis
+5,41195,34272,Necrosis
+5,41179,34280,Necrosis
+5,41163,34280,Necrosis
+5,41132,34288,Necrosis
+5,41085,34312,Necrosis
+5,41029,34351,Necrosis
+5,40966,34390,Necrosis
+5,40911,34430,Necrosis
+5,40864,34469,Necrosis
+5,40825,34501,Necrosis
+5,40801,34524,Necrosis
+5,40777,34548,Necrosis
+5,40754,34572,Necrosis
+5,40738,34595,Necrosis
+5,40722,34619,Necrosis
+5,40706,34635,Necrosis
+5,40683,34666,Necrosis
+5,40667,34698,Necrosis
+5,40659,34721,Necrosis
+5,40635,34753,Necrosis
+5,40612,34777,Necrosis
+5,40596,34800,Necrosis
+5,40580,34832,Necrosis
+5,40557,34879,Necrosis
+5,40517,34934,Necrosis
+5,40478,34981,Necrosis
+5,40446,35044,Necrosis
+5,40415,35115,Necrosis
+5,40383,35194,Necrosis
+5,40360,35273,Necrosis
+5,40344,35344,Necrosis
+5,40328,35407,Necrosis
+5,40320,35454,Necrosis
+5,40312,35501,Necrosis
+5,40304,35541,Necrosis
+5,40304,35580,Necrosis
+5,40304,35620,Necrosis
+5,40304,35651,Necrosis
+5,40304,35683,Necrosis
+5,40304,35706,Necrosis
+5,40304,35730,Necrosis
+5,40304,35769,Necrosis
+5,40304,35801,Necrosis
+5,40304,35825,Necrosis
+5,40304,35856,Necrosis
+5,40304,35895,Necrosis
+5,40304,35935,Necrosis
+5,40312,35966,Necrosis
+5,40328,36006,Necrosis
+5,40344,36061,Necrosis
+5,40360,36124,Necrosis
+5,40375,36187,Necrosis
+5,40391,36234,Necrosis
+5,40399,36258,Necrosis
+5,40407,36282,Necrosis
+5,40423,36313,Necrosis
+5,40430,36337,Necrosis
+5,40438,36352,Necrosis
+5,40446,36376,Necrosis
+5,40446,36408,Necrosis
+5,40446,36431,Necrosis
+5,40446,36463,Necrosis
+5,40446,36502,Necrosis
+5,40446,36526,Necrosis
+5,40446,36557,Necrosis
+5,40446,36597,Necrosis
+5,40438,36620,Necrosis
+5,40423,36636,Necrosis
+5,40415,36652,Necrosis
+5,40407,36668,Necrosis
+5,40399,36683,Necrosis
+5,40391,36691,Necrosis
+5,40375,36691,Necrosis
+5,40344,36707,Necrosis
+5,40304,36731,Necrosis
+5,40281,36739,Necrosis
+5,40265,36739,Necrosis
+5,40249,36739,Necrosis
+5,40226,36746,Necrosis
+5,40202,36754,Necrosis
+5,40186,36754,Necrosis
+5,40170,36754,Necrosis
+5,40155,36754,Necrosis
+5,40139,36754,Necrosis
+5,40123,36754,Necrosis
+5,40092,36754,Necrosis
+5,40036,36754,Necrosis
+5,39989,36746,Necrosis
+5,39958,36739,Necrosis
+5,39942,36739,Necrosis

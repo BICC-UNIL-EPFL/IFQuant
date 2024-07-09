@@ -1,0 +1,7 @@
+channel	name	score.type	threshold	automatic.thresholding.method
+1	CD15	circular.q050.extended.nucleus	10	none
+2	CK	median.extended.nucleus	5	bimodal
+3	CD3	median.nucleus	8	none
+4	CD11c	circular.q050.extended.nucleus	2	none
+5	CD20	q075.nucleus	5	none
+6	CD163	circular.q050.around.nucleus	15	none

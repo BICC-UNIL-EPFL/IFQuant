@@ -1,0 +1,40 @@
+version: '3.8'
+services:
+    ifquant-app:
+      container_name: ifquant-app
+      build:
+          context: ./ifquant-api
+          dockerfile: Dockerfile
+      restart: always
+      volumes:
+          - ./ifquant-api/php:/var/www/html/api
+          - ./ifquant-api/conf:/var/www/conf
+          - ./ifquant-api/tools:/var/www/tools
+          - ./ifquant-api/vendor:/var/www/vendor
+          - ./ifquant-vuejs/dist:/var/www/html
+          - ./data:/var/www/data/
+          - ./ifquant-engine/examples:/var/www/templates/
+          - ./log:/usr/local/log
+          - ./ifquant-api/conf/htaccess:/var/www/html/.htaccess
+      ports:
+          - 8088:80
+    iipserver:
+      container_name: ifquant-iipsrv
+      image: iipsrv/iipsrv
+      environment:
+        - CORS=*
+      restart: always
+      volumes:
+        - ./data:/images
+      ports:
+        - 8089:80
+    ifquant-engine:
+      container_name: ifquant-engine
+      build:
+          context: ./ifquant-engine
+          dockerfile: Dockerfile
+      volumes:
+          - ./ifquant-engine/scripts:/usr/local/bin/ifquant/
+          - ./ifquant-engine/examples:/var/www/templates/
+          - ./data:/var/www/data/
+          - ./log:/usr/local/log

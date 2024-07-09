@@ -1,0 +1,30 @@
+diff --git a/node_modules/openseadragon/build/openseadragon/openseadragon.js b/node_modules/openseadragon/build/openseadragon/openseadragon.js
+index 297d3d6..98dbe5f 100644
+--- a/node_modules/openseadragon/build/openseadragon/openseadragon.js
++++ b/node_modules/openseadragon/build/openseadragon/openseadragon.js
+@@ -2015,14 +2015,17 @@ function OpenSeadragon( options ){
+          * @param {String} className
+          */
+         addClass: function( element, className ) {
+-            element = $.getElement( element );
+-
+-            if (!element.className) {
+-                element.className = className;
+-            } else if ( ( ' ' + element.className + ' ' ).
+-                indexOf( ' ' + className + ' ' ) === -1 ) {
+-                element.className += ' ' + className;
+-            }
++          element = $.getElement( element );
++
++          if (!element.className) {
++              // element.className = className;
++							element.setAttribute('class',className);
++          } else if ( ( ' ' + element.className + ' ' ).
++              indexOf( ' ' + className + ' ' ) === -1 ) {
++              // element.className += ' ' + className;
++							let elClassNamae = element.className + " " + className
++							element.setAttribute('class', elClassNamae);
++          }
+         },
+ 
+         /**

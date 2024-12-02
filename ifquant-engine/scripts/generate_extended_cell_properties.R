@@ -188,7 +188,35 @@ if(!is.null(input.excluded.regions))
 
 if(is.null(nucleusFeatures.image))
 {
-    data.nucleus=data.table(cell.ID=numeric(0),nucleus.x=numeric(0),nucleus.y=numeric(0),nucleus.area=numeric(0),nucleus.perimeter=numeric(0))
+    cat(paste0("[",format(Sys.time()),"] "),"0 cell found. Aborting...\n")
+    output.table=data.table(cell.ID=numeric(0),
+                            nucleus.x=numeric(0),
+                            nucleus.y=numeric(0),
+                            cell.area=numeric(0)
+                            )
+    if(!is.null(input.TLS))
+    {
+        output.table=cbind(output.table,
+                           data.table(TLS.ID=numeric(0)))
+    }
+    dir.create(outputdir,showWarnings=FALSE,recursive=TRUE)
+    filename=paste0(outputdir,"/cells_properties_2.tsv")
+    cat("creating",filename,"\n")
+    fwrite(output.table,file=filename,sep="\t",na="NA",quote=FALSE,row.names=FALSE)
+    gzip(filename,destname=paste(filename,"gz",sep="."),overwrite=TRUE)
+
+    filename=paste0(outputdir,"/README_2.txt")
+    cat("creating",filename,"\n")
+    cat("cells_properties_2.tsv.gz: gzipped tab delimited file with columns\n",file=filename,sep="")
+    cat(" - cell.ID: cell ID.\n",file=filename,append=TRUE,sep="")
+    cat(" - nucleus.x: x coordinate of nucleus center in slide coordinate system (micrometer).\n",file=filename,append=TRUE,sep="")
+    cat(" - nucleus.y: y coordinate of nucleus center in slide coordinate system (micrometer).\n",file=filename,append=TRUE,sep="")
+    cat(" - cell.area: voronoi cell area (micrometer^2).\n",file=filename,append=TRUE,sep="")
+    if(!is.null(input.TLS))
+        cat(" - TLS.ID: ID of the TLS if the cell is in a TLS. NA if the cell is not in a TLS.\n",file=filename,append=TRUE,sep="")
+    cat("\n",file=filename,append=TRUE,sep="")
+    cat(paste0("[",format(Sys.time()),"] "),"Done\n")
+    quit()
 }
 if(!is.null(nucleusFeatures.image))
 {
